@@ -1,6 +1,7 @@
 .home-page {
   position: relative;
   width: 100%;
+  height: calc(100vh - 110px);
 }
 
 .image-slider {

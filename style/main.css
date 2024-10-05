@@ -4,9 +4,7 @@ main {
   z-index: -1;
   width: 100%;
 }
-section{
-  height: calc(100vh - 110px);
-}
+
 .decoration {
   position: relative;
   width: 100%;

@@ -1,0 +1,228 @@
+.story-page {
+  width: 100%;
+  position: relative;
+}
+
+.story-page .timeline-wrapper {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px auto auto auto auto;
+  grid-template-areas:
+    'title title'
+    'img1 content1'
+    'content2 img2'
+    'img3 content3'
+    'content4 img5';
+}
+
+.timeline-wrapper img {
+  width: 200px;
+  height: 200px;
+}
+
+.timeline-wrapper>div:nth-child(1) {
+  width: 100%;
+  grid-area: title;
+  font-family: "Great Vibes";
+  text-align: center;
+  align-self: center;
+}
+
+.timeline-wrapper div:nth-child(1) h2 {
+  font-size: 2rem;
+  color: rgb(253, 93, 93);
+  padding-bottom: 15px;
+}
+
+.timeline-wrapper div:nth-child(1) h1 {
+  font-size: 3rem;
+}
+
+.image-grid-1 {
+  position: relative;
+  text-align: end;
+  grid-area: img1;
+  padding: 30px;
+  border-top: 2px solid rgb(187, 189, 152);
+  border-right: thin solid rgb(187, 189, 152);
+  border-bottom: 2px solid rgb(187, 189, 152);
+}
+
+.image-grid-1::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  font-family: "Font Awesome 6 Free";
+  color: rgb(187, 189, 152);
+  font-size: 25px;
+  position: absolute;
+  font-weight: 900;
+  transform: translateY(-50%);
+  top: 50%;
+  right: -13.5px;
+}
+
+.image-grid-1::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: rgb(187, 189, 152);
+  border-radius: 50%;
+  top: -8.5px;
+  right: -7.5px;
+}
+
+.story-grid-1 {
+  grid-area: content1;
+  padding: 30px;
+  border-top: 2px solid rgb(187, 189, 152);
+  border-left: thin solid rgb(187, 189, 152);
+  border-bottom: 2px solid rgb(187, 189, 152);
+}
+
+.image-grid-2 {
+  position: relative;
+  grid-area: img2;
+  padding: 30px;
+  border-left: thin solid rgb(187, 189, 152);
+  border-bottom: 2px solid rgb(187, 189, 152);
+}
+
+.image-grid-2::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  font-family: "Font Awesome 6 Free";
+  color: rgb(187, 189, 152);
+  font-size: 25px;
+  position: absolute;
+  font-weight: 900;
+  top: 50%;
+  left: -13.5px;
+  transform: translateY(-50%);
+}
+
+.story-grid-2 {
+  text-align: end;
+  grid-area: content2;
+  padding: 30px;
+  border-right: thin solid rgb(187, 189, 152);
+  border-bottom: 2px solid rgb(187, 189, 152);
+}
+
+.image-grid-3 {
+  text-align: end;
+  position: relative;
+  grid-area: img3;
+  padding: 30px;
+  border-right: thin solid rgb(187, 189, 152);
+  border-bottom: 2px solid rgb(187, 189, 152);
+}
+
+.image-grid-3::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  font-family: "Font Awesome 6 Free";
+  color: rgb(187, 189, 152);
+  font-size: 25px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: -13.5px;
+  font-weight: 900;
+}
+
+.story-grid-3 {
+  grid-area: content3;
+  padding: 30px;
+  border-left: thin solid rgb(187, 189, 152);
+  border-bottom: 2px solid rgb(187, 189, 152);
+}
+
+.image-grid-4 {
+  position: relative;
+  grid-area: img5;
+  padding: 30px;
+  border-left: thin solid rgb(187, 189, 152);
+  border-bottom: 2px solid rgb(187, 189, 152);
+}
+
+.image-grid-4::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  font-family: "Font Awesome 6 Free";
+  color: rgb(187, 189, 152);
+  font-size: 25px;
+  position: absolute;
+  font-weight: 900;
+  transform: translateY(-50%);
+  top: 50%;
+  left: -13.5px;
+}
+
+.image-grid-4::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: rgb(187, 189, 152);
+  border-radius: 50%;
+  bottom: -7.5px;
+  left: -8.5px;
+}
+
+.story-grid-4 {
+  text-align: end;
+  grid-area: content4;
+  padding: 30px;
+  border-right: thin solid rgb(187, 189, 152);
+  border-bottom: 2px solid rgb(187, 189, 152);
+}
+
+.content-story{
+  display: flex;
+  align-items: center;
+}
+
+.image-story img{
+  width: 300px;
+  border-radius: 10px;
+  border: 3px double #BBBD98;
+  box-shadow: 0 0 20px rgb(187, 189, 152);
+}
+
+.content-story div {
+  height: 200px;
+  padding: 25px;
+  font-family: 'Oswald';
+  background: rgb(187, 189, 152);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(187, 189, 152);
+}
+
+.content-story div h3 {
+  font-family: 'Great Vibes';
+  letter-spacing: 5px;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.content-story div p:nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: rgb(253, 93, 93);
+  letter-spacing: 5px;
+  font-weight: 900;
+  text-shadow: 0 0 10px #fff;
+}
+
+.content-story div p:nth-child(3) {
+  font-size: 1rem;
+  color: #fff;
+}
