@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  z-index: 100;
+  background: #fff;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: 0 0 5px silver;
+}
+
+nav .logo img{
+  height: 110px;
+}
+
+.logo,
+.nav-menu,
+.book-attendance {
+  align-self: center;
+  justify-self: center;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+}
+
+li {
+  font-family: 'Great Vibes';
+  font-size: 1.5rem;
+}
+
+li:hover a {
+  color: rgb(253, 93, 93);
+}
+a.active{
+  color: rgb(253, 93, 93);
+}
+
+a {
+  color: rgb(94, 91, 91);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+header button {
+  height: 40px;
+  width: 200px;
+  background: rgb(253, 93, 93);
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: 'Oswald';
+  border: none;
+}
+
+header button:hover {
+  background: rgb(187, 189, 152);
+  border: thin solid rgb(253, 93, 93);
+}

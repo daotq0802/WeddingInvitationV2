@@ -1,0 +1,218 @@
+.about-page {
+  position: relative;
+  width: 100%;
+  z-index: -2;
+}
+
+.greeting {
+  height: 550px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Great Vibes';
+  font-size: 2rem;
+}
+
+.greeting h1 {
+  margin-top: 40px;
+  color: rgb(253, 93, 93);
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.information h2 {
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+  color: rgb(253, 93, 93);
+}
+
+.broom-infor,
+.bride-infor {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bride-infor img,
+.broom-infor img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgb(0, 0, 0)
+}
+
+.broom-infor {
+  justify-content: end;
+  text-align: end;
+}
+
+.first-infor-content {
+  width: 50%;
+}
+
+.information p {
+  font-family: "Oswald";
+  font-size: 1.5rem;
+  color: rgb(94, 91, 91);
+}
+
+.information i {
+  font-size: 3rem;
+  color: rgb(253, 93, 93);
+  text-shadow: 0 0 25px rgb(253, 93, 93);
+}
+
+.main-information {
+  position: relative;
+  height: calc(100vh - 110px);
+  width: 100%;
+  background: rgb(187, 189,152);
+  overflow: hidden;
+}
+
+.main-decoration img {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+}
+
+.main-decoration img:nth-child(1) {
+  top: -25px;
+  right: -50px;
+}
+
+.main-decoration img:nth-child(2) {
+  bottom: -25px;
+  left: -50px;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.main-image img {
+  width: 35%;
+  height: 700px;
+}
+
+.main-image .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Oswald";
+  color: #fff;
+}
+
+.main-image .content h1:nth-child(2),
+.groom-content-info div:nth-child(2) h3,
+.bride-content-info div:nth-child(2) h3 {
+  font-family: 'Great Vibes';
+  letter-spacing: 5px;
+  font-weight: bolder;
+}
+
+.main-image .content p:nth-child(1){
+  color: rgb(253, 93, 93);
+  letter-spacing: 7px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.main-image .content h1:nth-child(2){
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px rgb(253, 93, 93);
+}
+
+.main-image .content p:nth-child(3){
+  font-size: 1.5rem;
+}
+
+.infor-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: rgb(253, 93, 93);
+  padding: 30px;
+}
+
+.infor-click {
+  display: flex;
+  gap: 20px;
+}
+
+.infor-click button {
+  width: 150px;
+  height: 40px;
+  border:none;
+  font-family: 'Oswald';
+  font-size: 1.2rem;
+  background: #fff;
+  color: #000;
+}
+
+.infor-click button:hover {
+  transform: scale(0.8);
+}
+
+.infor-content img {
+  width: 120px;
+  height: 120px;
+  border: 3px double rgb(187, 189, 152);
+}
+
+.groom-content-info,
+.bride-content-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  display: none;
+  transition: all .5s ease;
+}
+
+
+.groom-content-info div:nth-child(2),
+.bride-content-info div:nth-child(2) {
+  width: calc(100% - 120px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff
+}
+
+.groom-content-info div:nth-child(2) h3,
+.bride-content-info div:nth-child(2) h3{
+  font-size: 1.5rem;
+}
+
+.social i {
+  margin-right: 25px;
+  font-size: 1.2rem;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social i:hover {
+  transform: scale(1.2);
+  background: rgb(187, 189, 152);
+}
+
+.bride-content-info.active, .groom-content-info.active {
+  display: flex;
+}
