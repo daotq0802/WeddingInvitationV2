@@ -4,13 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Quý Đạo & Ngọc Xuân</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <script src="https://kit.fontawesome.com/a4416efdce.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style/flipdown.css">
+  <script src="flipdown.js"></script>
   <link rel="stylesheet" href="style/header.css">
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/homepage.css">
   <link rel="stylesheet" href="style/aboutpage.css">
   <link rel="stylesheet" href="style/storypage.css">
+  <link rel="stylesheet" href="style/timeline-page.css">
+  <link rel="stylesheet" href="style/gallerypage.css">
 </head>
 
 <body>
@@ -144,7 +149,7 @@
         </div>
 
         <div class="image-grid-1 image-story">
-          <img src="assets/image1.jpg" alt="">
+          <img src="assets/image1.jpg">
         </div>
         <div class="story-grid-1 content-story">
           <div>
@@ -157,7 +162,7 @@
         </div>
 
         <div class="image-grid-2 image-story">
-          <img src="assets/image2.jpg" alt="">
+          <img src="assets/image2.jpg">
         </div>
         <div class="story-grid-2 content-story">
           <div>
@@ -170,7 +175,7 @@
         </div>
 
         <div class="image-grid-3 image-story">
-          <img src="assets/image3.jpg" alt="">
+          <img src="assets/image3.jpg">
         </div>
         <div class="story-grid-3 content-story">
           <div>
@@ -183,7 +188,7 @@
         </div>
 
         <div class="image-grid-4 image-story">
-          <img src="assets/image4.jpg" alt="">
+          <img src="assets/image4.jpg">
         </div>
         <div class="story-grid-4 content-story">
           <div>
@@ -192,6 +197,159 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia repellendus totam mollitia esse est
               laudantium eveniet rem corporis hic. Numquam, aliquam ex nam corporis doloremque optio dignissimos harum
               voluptate!</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="change-location">
+            <button id="bride-time" class="active"></button>
+            <button id="groom-time"></button>
+          </div>
+          <div class="detail-location">
+            <div class="bride-timer active">
+              <p>December 25, 2024</p>
+              <h1>We Are Getting Married</h1>
+              <p>Rạch Giá, Kiên Giang</p>
+              <div class="flipdown" id="bride-countdown"></div>
+            </div>
+
+            <div class="groom-timer">
+              <p>January 05, 2025</p>
+              <h1>We Are Getting Married</h1>
+              <p>Đống Đa, Hà Nội</p>
+              <div class="flipdown" id="groom-countdown"></div>
+            </div>
+          </div>
+          <button>Book Your Attendance</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-page">
+      <div class="timeline-deco">
+        <img src="assets/timeline-left.png">
+        <img src="assets/timeline-right.png">
+      </div>
+      <div class="planning">
+        <h1>Wedding Planning Timeline</h1>
+        <div class="event1 event">
+          <i class="fa-solid fa-menorah"></i>
+          <p>10:00 AM - 11:00 AM</p>
+          <p>Dinner</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ad aspernatur labore optio dolores eos
+            est sequi natus doloremque cumque?</p>
+        </div>
+
+        <div class="event2 event">
+          <i class="fa-solid fa-photo-film"></i>
+          <p>10:00 AM - 11:00 AM</p>
+          <p>Photoshoot</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ad aspernatur labore optio dolores eos
+            est sequi natus doloremque cumque?</p>
+        </div>
+
+        <div class="event3 event">
+          <i class="fa-solid fa-dungeon"></i>
+          <p>10:00 AM - 11:00 AM</p>
+          <p>Reception</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ad aspernatur labore optio dolores eos
+            est sequi natus doloremque cumque?</p>
+        </div>
+
+        <div class="event4 event">
+          <i class="fa-solid fa-champagne-glasses"></i>
+          <p>10:00 AM - 11:00 AM</p>
+          <p>Ceremony</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ad aspernatur labore optio dolores eos
+            est sequi natus doloremque cumque?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-page">
+      <div class="decoration">
+        <img src="assets/left-corner.png">
+        <img src="assets/right-corner.png">
+      </div>
+      <h1>Wedding Gallery</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel!</p>
+      <div class="gallery-holder">
+        <div style="--i: gallery1" class="gallery1 gallery">
+          <div class="img-holder">
+            <img src="assets/image1.jpg" alt="">
+          </div>
+          <div class="gallery-info">
+            <p>Wedding on the beach</p>
+            <p>November 19, 2024</p>
+          </div>
+        </div>
+
+        <div style="--i: gallery2" class="gallery2 gallery">
+          <div class="img-holder">
+            <img src="assets/image2.jpg" alt="">
+          </div>
+          <div class="gallery-info">
+            <p>Wedding on the beach</p>
+            <p>November 19, 2024</p>
+          </div>
+        </div>
+
+        <div style="--i: gallery3" class="gallery3 gallery">
+          <div class="img-holder">
+            <img src="assets/image3.jpg" alt="">
+          </div>
+          <div class="gallery-info">
+            <p>Wedding on the beach</p>
+            <p>November 19, 2024</p>
+          </div>
+        </div>
+
+        <div style="--i: gallery4" class="gallery4 gallery">
+          <div class="img-holder">
+            <img src="assets/image4.jpg" alt="">
+          </div>
+          <div class="gallery-info">
+            <p>Wedding on the beach</p>
+            <p>November 19, 2024</p>
+          </div>
+        </div>
+
+        <div style="--i: gallery5" class="gallery5 gallery">
+          <div class="img-holder">
+            <img src="assets/image5.jpg" alt="">
+          </div>
+          <div class="gallery-info">
+            <p>Wedding on the beach</p>
+            <p>November 19, 2024</p>
+          </div>
+        </div>
+
+        <div class="gallery6 gallery" style="--i: gallery6">
+          <div class="img-holder">
+            <img src="assets/image6.jpg" alt="">
+          </div>
+          <div class="gallery-info">
+            <p>Wedding on the beach</p>
+            <p>November 19, 2024</p>
+          </div>
+        </div>
+
+        <div class="gallery7 gallery" style="--i: gallery7">
+          <div class="img-holder">
+            <img src="assets/image7.jpg" alt="">
+          </div>
+          <div class="gallery-info">
+            <p>Wedding on the beach</p>
+            <p>November 19, 2024</p>
+          </div>
+        </div>
+
+        <div class="gallery1 gallery" style="--i: gallery8">
+          <div class="img-holder">
+            <img src="assets/image1.jpg" alt="">
+          </div>
+          <div class="gallery-info">
+            <p>Wedding on the beach</p>
+            <p>November 19, 2024</p>
           </div>
         </div>
       </div>
