@@ -14,8 +14,9 @@
   <link rel="stylesheet" href="style/homepage.css">
   <link rel="stylesheet" href="style/aboutpage.css">
   <link rel="stylesheet" href="style/storypage.css">
-  <link rel="stylesheet" href="style/timeline-page.css">
+  <link rel="stylesheet" href="style/timelinepage.css">
   <link rel="stylesheet" href="style/gallerypage.css">
+  <link rel="stylesheet" href="style/attendancepage.css">
 </head>
 
 <body>
@@ -353,6 +354,61 @@
           </div>
         </div>
       </div>
+      <button>View All</button>
+    </section>
+
+    <section class="attendance-page">
+      <div class="decoration">
+        <img src="assets/left-corner.png">
+        <img src="assets/right-corner.png">
+      </div>
+      <h1>Attendance Reservation</h1>
+      <fieldset>
+        <legend>Kindly respond by December 25, 2024 we look forward to celebrating with you!</legend>
+        <form>
+          <div style="--area: firstname" class="firstNameFrag ">
+            <label for="first-name">First Name</label>
+            <input type="text" placeholder="First Name" id="first-name">
+          </div>
+          <div style="--area: lastname" class="lastNameFrag">
+            <label for="last-name">Last Name</label>
+            <input type="text" placeholder="Last Name" id="last-name">
+          </div>
+          <div style="--area: yourmail" class="emailFrag">
+            <label for="email">Enter Your Email</label>
+            <input type="email" placeholder="Enter Your Email" id="email">
+          </div>
+          <div style="--area: yourphone" class="phoneFrag">
+            <label for="phone">Enter Your Phone</label>
+            <input type="text" placeholder="Enter Your Phone" id="phone">
+          </div>
+          <div style="--area: guest" class="guestFrag">
+            <label for="guest">Number Of Guest</label>
+            <select name="guesst" id="guest">
+              <option cheked value="Only Me">Only Me</option>
+              <option value="2 people">2 People</option>
+              <option value="2 people">3 People</option>
+              <option value="2 people">4 People</option>
+            </select>
+          </div>
+          <div style="--area: message" class="messageFrag">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+          </div>
+        </form>
+        <fieldset>
+          <legend>Will you be attending?</legend>
+          <div>
+            <input type="radio" checked name="attendance" id="accepts">
+            <label for="accepts">Accepts With Pleasure!</label>
+          </div>
+          <div>
+            <input type="radio" name="attendance" id="decline">
+            <label for="decline">Declines With Regret</label>
+          </div>
+        </fieldset>
+          <button>Submit Now</button>
+      </fieldset>
     </section>
   </main>
   <script src="index.js"></script>

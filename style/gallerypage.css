@@ -52,7 +52,7 @@
 
 @keyframes fadeIn{
   0%{
-    opacity: .5;
+    opacity: .7;
   }
   100%{
     opacity: 1;
@@ -82,4 +82,24 @@
   font-size: 1.2rem;
   letter-spacing: 2px;
   margin: 0;
+}
+
+.gallery-page button{
+  width: auto;
+  padding: 10px 50px;
+  font-family: 'Oswald';
+  font-size: 1.1rem;
+  background: rgb(253, 93, 93);
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+}
+
+.gallery-page button:hover{
+  background: rgb(187, 189, 152);
+  outline: thin solid rgb(253, 93, 93);
 }

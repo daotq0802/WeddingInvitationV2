@@ -1,0 +1,161 @@
+.attendance-page{
+  margin-top: 100px ;
+}
+.attendance-page h1{
+  line-height: 100px;
+  text-align: center;
+  font-family: 'Great Vibes';
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+legend {
+  line-height: 40px;
+  text-align: center;
+  padding: 10px 20px;
+  border: 3px double rgb(187, 189, 152);
+  color: rgb(253, 93, 93);
+  font-family: 'Oswald';
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.attendance-page>fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  border: 3px double rgb(187, 189, 152);
+}
+
+.attendance-page>fieldset {
+  border: 3px double rgb(187, 189, 152);
+  width: 70%;
+  margin: auto;
+  padding: 30px;
+}
+
+form {
+  max-width: 60%;
+  width: 60%;
+  margin: 30px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'firstname lastname'
+    'yourmail yourphone'
+    'guest guest'
+    'message message';
+}
+
+form>div {
+  grid-area: var(--area);
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald";
+}
+
+form>div label {
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+textarea {
+  height: 150px;
+  font-family: 'Oswald';
+  letter-spacing: 2px;
+  position: relative;
+  padding: 20px;
+  font-size: 1.1rem;
+  border: none;
+  resize: none;
+}
+
+select{
+  padding: 15px;
+  font-size: 1.1rem;
+  font-family: 'Oswald';
+  letter-spacing: 3px;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+form>div input{
+  padding: 15px;
+  font-size: 1.1rem;
+  font-family: 'Oswald';
+  letter-spacing: 2px;
+  border: none;
+}
+
+form>div input:focus, textarea:focus, select:focus{
+  outline: 4px solid rgba(253, 93, 93, 0.5);
+  border: none;
+  transition: none;
+}
+
+fieldset>fieldset {
+  width: 70%;
+  margin: auto;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px double rgb(187, 189, 152);
+}
+
+fieldset>fieldset div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+fieldset>fieldset label{
+ font-family: 'Oswald';
+ letter-spacing: 2px;
+ font-size: 1.1rem;
+ margin-left: 10px;
+ cursor: pointer;
+}
+
+fieldset>button{
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  background: rgb(253, 93, 93);
+  font-family: 'Oswald';
+  font-size: 1.1rem;
+  letter-spacing: 2;
+  font-weight: 500;
+  color: #fff;
+}
+
+fieldset>button:hover{
+  background: rgb(187, 189, 152);
+}
+
+input[type='radio']{
+  appearance: none;
+  border: 2px solid rgb(253, 93, 93);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 200ms transform ease-in-out;
+  box-shadow: inset 1em 1em rgb(253, 93, 93);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
