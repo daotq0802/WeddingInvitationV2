@@ -1,0 +1,55 @@
+.gift-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 300px;
+  grid-template-areas:
+    'page-title page-title'
+    'vietnam japan';
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+    grid-gap: 25px;
+}
+
+.gift-page h1{
+  grid-area: page-title;
+  text-align: center;
+  font-family: 'Great Vibes';
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.japan-bank{
+  justify-self: center;
+  grid-area: japan;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center start;
+  align-items: center;
+  font-family: 'Oswald';
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.vietnam-bank{
+  justify-self: center;
+  grid-area: vietnam;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald';
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.gift-page img{
+  width: 250px;
+  height: 150px;
+  box-shadow: 0 0 20px rgb(253, 93, 93);
+}
