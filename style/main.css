@@ -1,16 +1,20 @@
-body{
+body {
   background: #cccaca2c;
+}
+
+button {
+  cursor: pointer;
 }
 
 main {
   top: 110px;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: auto;
 }
 
-main section{
-position: relative;
+main section {
+  position: relative;
 }
 
 .decoration {

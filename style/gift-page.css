@@ -51,5 +51,5 @@
 .gift-page img{
   width: 250px;
   height: 150px;
-  box-shadow: 0 0 20px rgb(253, 93, 93);
+  box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.301);
 }
