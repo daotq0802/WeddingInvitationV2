@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quý Đạo & Ngọc Xuân</title>
+  <title>Ngọc Xuân & Quý Đạo</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <script src="https://kit.fontawesome.com/a4416efdce.js" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <link rel="stylesheet" href="style/flipdown.css">
   <script src="./js/flipdown.js"></script>
   <link rel="stylesheet" href="style/header.css">
@@ -53,7 +54,7 @@
       </div>
       <div class="content">
         <h2>WE ARE GETTING MARRIED</h2>
-        <h1>Quý Đạo <i class="fa-solid fa-heart"></i> Ngọc Xuân</h1>
+        <h1>Ngọc Xuân <i class="fa-solid fa-heart"></i> Quý Đạo</h1>
         <h2>December 25th 2024</h2>
       </div>
     </section>
@@ -68,19 +69,19 @@
         <h1>Hello</h1>
         <p>We invite you to celebrate our wedding</p>
         <div class="information">
-          <div class="broom-infor">
-            <div class="first-infor-content">
-              <h2>Quý Đạo</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptates.</p>
-            </div>
-            <img src="assets/image2.jpg">
-          </div>
-          <i class="fa-solid fa-heart"></i>
           <div class="bride-infor">
-            <img src="assets/image1.jpg">
             <div class="first-infor-content">
               <h2>Ngọc Xuân</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, excepturi!</p>
+            </div>
+            <img src="assets/image1.jpg">
+          </div>
+          <i class="fa-solid fa-heart"></i>
+          <div class="broom-infor">
+            <img src="assets/image2.jpg">
+            <div class="first-infor-content">
+              <h2>Quý Đạo</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptates.</p>
             </div>
           </div>
         </div>
@@ -101,8 +102,8 @@
               dolor iste vero soluta dolorum! Fuga!</p>
             <div class="infor-content">
               <div class="infor-click">
-                <button>Groom Info</button>
                 <button>Bride Info</button>
+                <button>Groom Info</button>
               </div>
               <div class="each-info">
                 <div class="groom-content-info active">
@@ -118,8 +119,8 @@
                       <i class="fa-brands fa-linkedin"></i>
                     </div>
                   </div>
-
                 </div>
+
                 <div class="bride-content-info">
                   <img src="assets/image2.jpg">
                   <div>
@@ -435,8 +436,8 @@
 
     <section class="notification-modal">
       <fieldset>
-        <legend>Send Message Fail</legend>
-        <p>Phát hiện có mục chưa được cấp thông tin, hãy điền đầy đủ thông tin trước khi gửi!!!</p>
+        <legend></legend>
+        <p></p>
         <button>Got it</button>
       </fieldset>
     </section>
@@ -474,6 +475,7 @@
     </section>
   </footer>
   <script src="./js/index.js"></script>
+  <script src="./js/sendMail.js"></script>
   <script type="module" src="js/firebase.js"></script>
 </body>
 

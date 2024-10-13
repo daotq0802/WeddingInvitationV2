@@ -51,6 +51,11 @@
 }
 
 .broom-infor {
+  justify-content: start;
+  text-align: start;
+}
+
+.bride-infor {
   justify-content: end;
   text-align: end;
 }

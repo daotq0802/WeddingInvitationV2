@@ -1,8 +1,9 @@
-main{
-position: relative;
-z-index: 1;
+main {
+  position: relative;
+  z-index: 1;
 }
-footer{
+
+footer {
   background-image: url('../assets/image1.jpg');
   background-position: center;
   background-size: cover;
@@ -15,10 +16,11 @@ footer{
   font-family: 'Oswald';
   margin-top: 200px;
   padding: 30px;
-  z-index: -1;
+  z-index: 1;
   color: #fff;
 }
-footer::before{
+
+footer::before {
   position: absolute;
   content: "";
   background: #00000057;
@@ -29,7 +31,7 @@ footer::before{
   z-index: -1;
 }
 
-footer section{
+footer section {
   position: relative;
   z-index: 2;
   width: 15%;
@@ -39,43 +41,44 @@ footer section{
   justify-content: center;
 }
 
-footer section h2{
+footer section h2 {
   font-family: 'Great Vibes';
   font-size: 1.7rem;
   letter-spacing: 3px;
 }
 
-footer section:nth-child(3){
+footer section:nth-child(3) {
   text-align: end;
   transform-origin: right;
 }
 
-footer section:nth-child(3) a{
+footer section:nth-child(3) a {
   font-weight: normal;
   letter-spacing: normal;
   color: #fff;
 }
-footer section:nth-child(3) i{
- margin-right: 10px;
+
+footer section:nth-child(3) i {
+  margin-right: 10px;
 }
 
-footer section:nth-child(2){
+footer section:nth-child(2) {
   text-align: center;
   width: 20%;
 }
 
-footer section:nth-child(2) img{
+footer section:nth-child(2) img {
   width: 150px;
   margin: auto;
 }
 
 
-footer section:nth-child(2) ul{
+footer section:nth-child(2) ul {
   display: flex;
   justify-content: space-evenly;
 }
 
-footer section:nth-child(2) ul li{
+footer section:nth-child(2) ul li {
   width: 40px;
   height: 40px;
   display: flex;
@@ -87,12 +90,14 @@ footer section:nth-child(2) ul li{
   transition: all .2s ease !important;
 }
 
-footer section:nth-child(2) ul li:hover{
+footer section:nth-child(2) ul li:hover {
   color: #fff;
   background: rgb(253, 93, 93);
 }
 
-footer section:nth-child(1) p:hover, footer section:nth-child(3) a:hover, footer section:nth-child(3) div:hover{
+footer section:nth-child(1) p:hover,
+footer section:nth-child(3) a:hover,
+footer section:nth-child(3) div:hover {
   letter-spacing: 3px;
   color: rgb(253, 93, 93);
   cursor: pointer;

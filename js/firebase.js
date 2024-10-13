@@ -26,7 +26,6 @@ import {
   ref,
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
 const db = getDatabase();
-
 let firstName = document.getElementById("first-name");
 let lastName = document.getElementById("last-name");
 let email = document.getElementById("email");
@@ -35,6 +34,14 @@ let guest = document.getElementById("guest");
 let message = document.getElementById("message");
 let attendance = document.getElementsByName("attendance");
 let submit = document.getElementById("submitBtn");
+function findSelection() {
+  var sizes = attendance.length;
+  for (let i = 0; i < sizes; i++) {
+    if (attendance[i].checked == true) {
+      return attendance[i].value;
+    }
+  }
+}
 
 submit.addEventListener("click", () => {
   if (
@@ -45,16 +52,44 @@ submit.addEventListener("click", () => {
     message.value == ""
   ) {
     document.querySelector(".notification-modal").classList.add("active");
+    document.querySelector(".notification-modal").classList.add("active");
+    document.querySelector(".notification-modal legend").textContent =
+      "Send Message Fail";
+    document.querySelector(".notification-modal p").textContent =
+      "Phát hiện có mục chưa được cấp thông tin, hãy điền đầy đủ thông tin trước khi gửi!!!";
   } else {
     if (findSelection() == "accepts") {
       set(ref(db, "accept/" + Date.now()), {
         FullName: firstName.value + lastName.value,
+        Email: email.value,
         PhoneNo: phone.value,
         GuestNumber: guest.value,
         Message: message.value,
       })
         .then(() => {
-          alert("Cảm ơn đã tham dự cùng!!!");
+          Email.send({
+            SecureToken: "94a28672-6cd2-4b2a-a9fc-ff982d7dee9f ",
+            To: "daotq8297@gmail.com",
+            From: "tq.dao0802@gmail.com",
+            Subject:
+              findSelection() == "accepts"
+                ? "Accepts With Pleasure!"
+                : "Declines With Regret",
+            Body: `<h1>Name: <span style='color: red'>${
+              firstName.value + " " + lastName.value
+            }</span></h1>
+            <i style = "font-size: 18px">Email: <span>${email.value}</span></i>
+            <p style = "font-size: 18px">Phone: <span>${phone.value}</span></p>
+            <p style = "font-size: 18px">Guest: <span>${guest.value}</span></p>
+            <p style = "font-size: 18px">Message: <span>${
+              message.value
+            }</span></p>`,
+          });
+          document.querySelector(".notification-modal").classList.add("active");
+          document.querySelector(".notification-modal legend").textContent =
+            "Thank for Attending";
+          document.querySelector(".notification-modal p").textContent =
+            "See you in the party";
           document.querySelector("form").reset();
         })
         .catch((error) => {
@@ -63,12 +98,41 @@ submit.addEventListener("click", () => {
     } else {
       set(ref(db, "decline/" + Date.now()), {
         FullName: firstName.value + lastName.value,
+        Email: email.value,
         PhoneNo: phone.value,
         GuestNumber: guest.value,
         Message: message.value,
       })
         .then(() => {
-          alert("Thật tiếc!!!");
+          Email.send({
+            SecureToken: "94a28672-6cd2-4b2a-a9fc-ff982d7dee9f ",
+            To: "daotq8297@gmail.com",
+            From: "tq.dao0802@gmail.com",
+            Subject:
+              findSelection() == "accepts"
+                ? "Accepts With Pleasure!"
+                : "Declines With Regret",
+            Body: `<h1>Name: <span style='color: red'>${
+              firstName.value + " " + lastName.value
+            }</span></h1>
+                <i style = "font-size: 18px">Email: <span>${
+                  email.value
+                }</span></i>
+                <p style = "font-size: 18px">Phone: <span>${
+                  phone.value
+                }</span></p>
+                <p style = "font-size: 18px">Guest: <span>${
+                  guest.value
+                }</span></p>
+                <p style = "font-size: 18px">Message: <span>${
+                  message.value
+                }</span></p>`,
+          });
+          document.querySelector(".notification-modal").classList.add("active");
+          document.querySelector(".notification-modal legend").textContent =
+            "See you next time!";
+          document.querySelector(".notification-modal p").textContent =
+            "Thật tiếc khi không thể gặp bạn ở buổi tiệc của chúng mình!!!";
           document.querySelector("form").reset();
         })
         .catch((error) => {
@@ -83,12 +147,3 @@ document
   .addEventListener("click", () => {
     document.querySelector(".notification-modal").classList.remove("active");
   });
-
-function findSelection() {
-  var sizes = attendance.length;
-  for (let i = 0; i < sizes; i++) {
-    if (attendance[i].checked == true) {
-      return attendance[i].value;
-    }
-  }
-}
