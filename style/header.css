@@ -29,7 +29,7 @@ nav {
   box-shadow: 0 0 5px silver;
 }
 
-nav .logo img{
+nav .logo img {
   height: 110px;
 }
 
@@ -40,7 +40,7 @@ nav .logo img{
   justify-self: center;
 }
 
-.logo{
+.logo {
   cursor: pointer;
 }
 
@@ -57,7 +57,8 @@ li {
 li:hover a {
   color: rgb(253, 93, 93);
 }
-a.active{
+
+a.active {
   color: rgb(253, 93, 93);
 }
 
@@ -82,4 +83,8 @@ header button {
 header button:hover {
   background: rgb(187, 189, 152);
   border: thin solid rgb(253, 93, 93);
+}
+
+@media (width<=1200px) {
+  
 }
