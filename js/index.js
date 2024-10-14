@@ -91,8 +91,19 @@ window.addEventListener("scroll", () => {
 
 function goToBook() {
   window.scrollTo(0,6218)
+  document.querySelector('header').classList.remove('active')
 }
 
 function goToTop() {
   window.scrollTo(0,0)
 }
+
+document.querySelector('.nav-toggle').addEventListener('click',()=>{
+  document.querySelector('header').classList.toggle('active')
+})
+
+navLink.forEach(nav =>{
+  nav.addEventListener('click', () =>{
+    document.querySelector('header').classList.remove('active')
+  })
+})

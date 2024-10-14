@@ -19,6 +19,7 @@ header {
   height: 110px;
   z-index: 100;
   background: #fff;
+  transition: .5s ease;
 }
 
 nav {
@@ -31,6 +32,7 @@ nav {
 
 nav .logo img {
   height: 110px;
+  cursor: pointer;
 }
 
 .logo,
@@ -38,10 +40,6 @@ nav .logo img {
 .book-attendance {
   align-self: center;
   justify-self: center;
-}
-
-.logo {
-  cursor: pointer;
 }
 
 ul {
@@ -85,6 +83,88 @@ header button:hover {
   border: thin solid rgb(253, 93, 93);
 }
 
+.nav-toggle {
+  transform: scale(0);
+}
+
 @media (width<=1200px) {
-  
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  .nav-toggle {
+    transform: scale(1);
+    font-size: 30px;
+    color: rgb(253, 93, 93);
+    border: thin solid rgb(192, 192, 192);
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .nav-menu {
+    width: 80%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-left: 25px;
+  }
+
+  nav ul li {
+    align-items: start;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+  }
+
+  .book-attendance {
+    width: 80%;
+    padding-left: 25px;
+    margin-top: 15px;
+  }
+
+  .book-attendance,
+  .nav-menu {
+    opacity: 0;
+  }
+
+  .active .nav-menu,
+  .active .book-attendance {
+    opacity: 1;
+  }
+
+  .active .logo{
+    border-bottom: 2px solid rgba(192, 192, 192, 0.39);
+  }
+
+  header.active{
+    height: auto;
+    padding-bottom: 25px;
+  }
+}
+
+@media (width<=575px) {
+  .logo{
+    width: 100%;
+    padding: 0 25px;
+  }
+  .nav-toggle{
+    transform: scale(1);
+  }
 }
