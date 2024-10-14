@@ -167,3 +167,40 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
+
+@media (width<=1200px) {
+  .attendance-page>fieldset{
+    width: 70%;
+  }
+  form{
+    min-width: 90%;
+  }
+}
+
+@media (width<=992px) {
+  .attendance-page>fieldset{
+    width: 70%;
+  }
+  form{
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (width<=768px) {
+  .attendance-page>fieldset{
+    width: 90%;
+    padding: 10px;
+  }
+  form{
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  form fieldset{
+    flex-direction: column;
+    line-height: 50px;
+  }
+}

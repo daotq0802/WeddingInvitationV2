@@ -1,4 +1,4 @@
-.gallery-page h1{
+.gallery-page h1 {
   font-family: 'Great Vibes';
   text-align: center;
   margin: 100px 0 15px 0;
@@ -6,28 +6,30 @@
   letter-spacing: 3px;
 }
 
-.gallery-page p{
+.gallery-page p {
   font-family: 'Oswald';
   text-align: center;
   margin-bottom: 50px;
   font-size: 1.5rem;
 }
 
-.gallery-holder{
+.gallery-holder {
   width: 70%;
   display: grid;
   grid-gap: 25px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  'gallery1 gallery2 gallery3 gallery4'
-  'gallery5 gallery6 gallery7 gallery8';
+  grid-template-areas:
+    'gallery1 gallery2 gallery3 gallery4'
+    'gallery5 gallery6 gallery7 gallery8';
   margin: auto;
 }
-.gallery img{
+
+.gallery img {
   width: 100%;
   height: 350px;
 }
-.gallery .img-holder{
+
+.gallery .img-holder {
   position: relative;
   width: 100%;
   height: 350px;
@@ -35,7 +37,7 @@
   overflow: hidden;
 }
 
-.gallery{
+.gallery {
   grid-area: var(--i);
   border: 3px double rgb(187, 189, 152);
   cursor: pointer;
@@ -44,22 +46,23 @@
   box-shadow: 0 0 15px rgb(187, 189, 152);
 }
 
-.gallery:hover img{
+.gallery:hover img {
   transform: scale(1.2);
- filter:contrast(1.2);
- animation: fadeIn 2s ease;
+  filter: contrast(1.2);
+  animation: fadeIn 2s ease;
 }
 
-@keyframes fadeIn{
-  0%{
+@keyframes fadeIn {
+  0% {
     opacity: .7;
   }
-  100%{
+
+  100% {
     opacity: 1;
   }
 }
 
-.gallery-info{
+.gallery-info {
   position: relative;
   padding: 15px;
   display: flex;
@@ -70,21 +73,21 @@
   background: #fff;
 }
 
-.gallery-info p:nth-child(1){
+.gallery-info p:nth-child(1) {
   font-family: 'Great Vibes';
   font-size: 1.7rem;
   letter-spacing: 2px;
   margin: 0;
 }
 
-.gallery-info p:nth-child(2){
+.gallery-info p:nth-child(2) {
   font-family: 'Oswald';
   font-size: 1.2rem;
   letter-spacing: 2px;
   margin: 0;
 }
 
-.gallery-page button{
+.gallery-page button {
   width: auto;
   padding: 10px 50px;
   font-family: 'Oswald';
@@ -99,13 +102,61 @@
   margin-top: 30px;
 }
 
-.gallery-page button:hover{
+.gallery-page button:hover {
   background: rgb(187, 189, 152);
   outline: thin solid rgb(253, 93, 93);
 }
 
 @media (width<=1200px) {
-  .gallery-holder{
+  .gallery-holder {
     width: 90%;
+    gap: 10px;
+  }
+
+  .decoration {
+    padding-top: 10px;
+  }
+}
+
+@media (width<=992px) {
+  .gallery-holder {
+    width: 70%;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'gallery1 gallery2 '
+      'gallery3 gallery4'
+      'gallery5 gallery6 '
+      'gallery7 gallery8';
+  }
+
+  .decoration {
+    padding-top: 10px;
+  }
+}
+
+@media (width<=768px) {
+  .gallery-holder {
+    width: 70%;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'gallery1'
+      'gallery2'
+      'gallery3'
+      'gallery4';
+  }
+  .gallery5, .gallery6,.gallery7,.gallery8{
+    display: none;
+  }
+
+  .decoration {
+    padding-top: 10px;
+  }
+  .gallery img{
+    height: 500px;
+  }
+  .gallery .img-holder{
+    height: 500px;
   }
 }
