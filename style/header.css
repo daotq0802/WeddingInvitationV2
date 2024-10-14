@@ -11,6 +11,8 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
+
 }
 
 header {
@@ -88,6 +90,9 @@ header button:hover {
 }
 
 @media (width<=1200px) {
+  header{
+    width: 100vw;
+  }
   nav {
     display: flex;
     flex-direction: column;
@@ -142,11 +147,13 @@ header button:hover {
   .book-attendance,
   .nav-menu {
     opacity: 0;
+    display: none;
   }
 
   .active .nav-menu,
   .active .book-attendance {
     opacity: 1;
+    display: block;
   }
 
   .active .logo{
@@ -160,6 +167,9 @@ header button:hover {
 }
 
 @media (width<=575px) {
+  header{
+    width: 100vw;
+  }
   .logo{
     width: 100%;
     padding: 0 25px;

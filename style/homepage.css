@@ -36,7 +36,7 @@
   color: #fff;
 }
 
-.home-page .content h2 {
+.home-page .content h2{
   font-family: 'Oswald';
   font-size: 2rem;
   border-top: 3px double rgb(187, 189, 152);
@@ -109,4 +109,27 @@
   100% {
     transform: scale(1);
   }
+}
+
+@media (width<= 1200px) {
+.home-page{
+  width: 100vw;
+}
+
+.home-page img{
+  width: 100vw;
+  height: 100%;
+}
+
+  .home-page .content h2{
+    font-size: calc(.5rem + 2vw);
+  }
+
+  .home-page .content h1{
+    font-size: calc(1.5rem + 2vw);
+  }
+}
+
+@media (width<=992px) {
+  
 }
