@@ -130,6 +130,12 @@
   }
 }
 
-@media (width<=992px) {
-  
+@media (width<=550px) {
+  .home-page .content h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    text-align: center;
+    gap: 10px;
+  }
 }

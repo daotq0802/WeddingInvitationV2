@@ -314,3 +314,54 @@
     justify-content: center;
   }
 }
+
+@media (width<=550px) {
+  .about-page{
+    margin: 25px 0;
+  }
+  .greeting{
+    width: 100%;
+    padding: 0;
+    padding-top: 75px;
+  }
+
+  .information{
+    padding: 25px;
+  }
+  .first-infor-content{
+    width: 80%;
+  }
+
+  .bride-infor img, .broom-infor img{
+    width: 100px;
+    height: 100px;
+  }
+  .main-image img{
+    width: 80%;
+    height: 500px;
+  }
+  .main-image .content{
+    width: 100%;
+    padding: 0 25px;
+  }
+  .main-image .content h1:nth-child(2){
+    font-size: 1.5rem;
+  }
+  .main-image .content p:nth-child(3){
+    font-size: 1rem;
+  }
+  .infor-content img{
+    width: 150px;
+    height: 200px;
+  }
+  .social{
+    display: flex;
+    justify-content: space-between;
+  }
+  .groom-content-info div:nth-child(2) p, .bride-content-info div:nth-child(2) p{
+    text-align: justify;
+  }
+  .social i{
+    margin: 0;
+  }
+}
