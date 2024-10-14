@@ -10,14 +10,13 @@
 }
 
 html {
-  scroll-behavior: smooth;
   width: 100vw;
-
+  scroll-behavior: smooth;
 }
 
 header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 110px;
   z-index: 100;
   background: #fff;
@@ -90,9 +89,6 @@ header button:hover {
 }
 
 @media (width<=1200px) {
-  header{
-    width: 100vw;
-  }
   nav {
     display: flex;
     flex-direction: column;
@@ -167,9 +163,6 @@ header button:hover {
 }
 
 @media (width<=575px) {
-  header{
-    width: 100vw;
-  }
   .logo{
     width: 100%;
     padding: 0 25px;

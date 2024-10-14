@@ -225,3 +225,48 @@
 .groom-content-info.active {
   display: flex;
 }
+
+@media (width <= 992px) {
+  .greeting{
+    height: auto;
+    padding: 75px 0;
+  }
+  .decoration img:nth-child(3){
+    height: 150px;
+  }
+  .information{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-information{
+    height: auto;
+    padding: 50px 0;
+    z-index: 100;
+  }
+
+  .main-image{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .main-image img{
+    width: 70%;
+  }
+
+  .main-image .content{
+    width: 70%;
+    gap: 10px;
+  }
+  .infor-content{
+    padding: 15px;
+    gap: 15px;
+  }
+  .infor-content img{
+    width: 200px;
+    height: 200px;
+  }
+  .groom-content-info div:nth-child(2), .bride-content-info div:nth-child(2){
+    width: calc(calc(100% - 200px))
+  }
+}
