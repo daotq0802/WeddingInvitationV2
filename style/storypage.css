@@ -393,6 +393,7 @@
     border-left: 2px solid rgb(187, 189, 152);
     border-bottom: 2px solid rgb(187, 189, 152);
     padding: 15px;
+    text-align:start;
   }
 
   .image-grid-2,
@@ -402,6 +403,7 @@
     padding:15px;
     border-right: 2px solid rgb(187, 189, 152);
     border-bottom: 2px solid rgb(187, 189, 152);
+    text-align:end;
   }
 
   .content-story div h3{

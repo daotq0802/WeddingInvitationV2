@@ -103,3 +103,9 @@
   background: rgb(187, 189, 152);
   outline: thin solid rgb(253, 93, 93);
 }
+
+@media (width<=1200px) {
+  .gallery-holder{
+    width: 90%;
+  }
+}
