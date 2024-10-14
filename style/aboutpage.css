@@ -80,14 +80,15 @@
   position: relative;
   height: calc(100vh - 110px);
   width: 100%;
-  background: rgb(187, 189,152);
+  background: rgb(187, 189, 152);
   overflow: hidden;
 }
 
 .main-decoration img {
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
+  opacity: .6;
 }
 
 .main-decoration img:nth-child(1) {
@@ -111,7 +112,9 @@
 
 .main-image img {
   width: 35%;
-  height: 700px;
+  height: 650px;
+  outline: 3px double rgb(253, 93, 93);
+  box-shadow: 0 0 25px rgb(253, 93, 93);
 }
 
 .main-image .content {
@@ -131,19 +134,19 @@
   font-weight: bolder;
 }
 
-.main-image .content p:nth-child(1){
+.main-image .content p:nth-child(1) {
   color: rgb(253, 93, 93);
   letter-spacing: 7px;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-.main-image .content h1:nth-child(2){
+.main-image .content h1:nth-child(2) {
   font-size: 2.5rem;
   text-shadow: 0 0 5px rgb(253, 93, 93);
 }
 
-.main-image .content p:nth-child(3){
+.main-image .content p:nth-child(3) {
   font-size: 1.5rem;
 }
 
@@ -164,7 +167,7 @@
 .infor-click button {
   width: 150px;
   height: 40px;
-  border:none;
+  border: none;
   font-family: 'Oswald';
   font-size: 1.2rem;
   background: #fff;
@@ -201,7 +204,7 @@
 }
 
 .groom-content-info div:nth-child(2) h3,
-.bride-content-info div:nth-child(2) h3{
+.bride-content-info div:nth-child(2) h3 {
   font-size: 1.5rem;
 }
 
@@ -218,6 +221,7 @@
   background: rgb(187, 189, 152);
 }
 
-.bride-content-info.active, .groom-content-info.active {
+.bride-content-info.active,
+.groom-content-info.active {
   display: flex;
 }

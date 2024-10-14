@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document
       .querySelector(".timer .change-location .active")
       .classList.remove("active");
-      document.querySelector(".change-location").style.display = 'none'
+    document.querySelector(".change-location").style.display = "none";
     document.querySelector(".bride-timer").classList.remove("active");
     document.querySelector("#groom-time").classList.add("active");
     document.querySelector(".groom-timer").classList.add("active");
@@ -69,3 +69,30 @@ window.onload = function () {
         : originalTitle;
   }, 3000);
 };
+
+const navLink = document.querySelectorAll(".nav_link");
+const sectionLink = document.querySelectorAll(".section");
+
+let currentSection = "home";
+window.addEventListener("scroll", () => {
+  sectionLink.forEach((section) => {
+    if (window.scrollY >= section.offsetTop) {
+      currentSection = section.id;
+    }
+  });
+
+  navLink.forEach((nav) => {
+    if (nav.href.includes(currentSection)) {
+      document.querySelector("ul li a.active").classList.remove("active");
+      nav.classList.add("active");
+    }
+  });
+});
+
+function goToBook() {
+  window.scrollTo(0,6218)
+}
+
+function goToTop() {
+  window.scrollTo(0,0)
+}

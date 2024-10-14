@@ -26,25 +26,27 @@
 <body>
   <header>
     <nav>
-      <div class="logo">
-        <img src="assets/Logo.png">
+      <div onclick="goToTop()" class="logo">
+        <img src="assets/logo_icon/Logo.png">
       </div>
       <div class="nav-menu">
         <ul>
-          <li><a class="active" href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Story</a></li>
-          <li><a href="">Timeline</a></li>
-          <li><a href="">Gallery</a></li>
+          <li><a class="nav_link active" href="#home">Home</a></li>
+          <li><a class="nav_link " href="#about">About</a></li>
+          <li><a class="nav_link " href="#story">Story</a></li>
+          <li><a class="nav_link " href="#timeline">Timeline</a></li>
+          <li><a class="nav_link " href="#gallery">Gallery</a></li>
+          <li><a class="nav_link " href="#book">Attendance</a></li>
+          <li><a class="nav_link " href="#gift">Gift</a></li>
         </ul>
       </div>
       <div class="book-attendance">
-        <button>Book Attendance</button>
+        <button onclick="goToBook()">Book Attendance</button>
       </div>
     </nav>
   </header>
   <main>
-    <section class="home-page">
+    <section class="home-page section" id="home">
       <div class="image-slider">
         <img class="active" src="assets/image1.jpg">
         <img src="assets/image2.jpg">
@@ -59,11 +61,11 @@
       </div>
     </section>
 
-    <section class="about-page">
+    <section class="about-page section" id="about">
       <div class="decoration">
-        <img src="assets/left-corner.png">
-        <img src="assets/right-corner.png">
-        <img src="assets/top-corner.png">
+        <img src="assets/decoration/left-corner.png">
+        <img src="assets/decoration/right-corner.png">
+        <img src="assets/decoration/top-corner.png">
       </div>
       <div class="greeting">
         <h1>Hello</h1>
@@ -89,12 +91,12 @@
 
       <div class="main-information">
         <div class="main-decoration">
-          <img src="assets/top-right.png">
-          <img src="assets/bottom-left.png">
+          <img src="assets/decoration/top-right.png">
+          <img src="assets/decoration/bottom-left.png">
         </div>
 
         <div class="main-image">
-          <img src="assets/image-frame.png">
+          <img src="assets/image1.jpg">
           <div class="content">
             <p>ABOUT US</p>
             <h1>We Make Your Every Moment</h1>
@@ -109,7 +111,7 @@
                 <div class="groom-content-info active">
                   <img src="assets/image1.jpg">
                   <div>
-                    <h3>Quý Đạo</h3>
+                    <h3>Ngọc Xuân</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quas earum tempore, dolorum
                       porro obcaecati quae rerum quisquam sequi at!</p>
                     <div class="social">
@@ -124,7 +126,7 @@
                 <div class="bride-content-info">
                   <img src="assets/image2.jpg">
                   <div>
-                    <h3>Ngọc Xuân</h3>
+                    <h3>Quý Đạo</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatibus delectus sunt? Quas,
                       dignissimos. Saepe nihil sit aut numquam officiis?</p>
                     <div class="social">
@@ -142,10 +144,10 @@
       </div>
     </section>
 
-    <section class="story-page">
+    <section class="story-page section" id="story">
       <div class="decoration">
-        <img src="assets/left-corner.png">
-        <img src="assets/right-corner.png">
+        <img src="assets/decoration/left-corner.png">
+        <img src="assets/decoration/right-corner.png">
       </div>
       <div class="timeline-wrapper">
         <div>
@@ -224,15 +226,15 @@
               <div class="flipdown" id="groom-countdown"></div>
             </div>
           </div>
-          <button>Book Your Attendance</button>
+          <button onclick="goToBook()">Book Your Attendance</button>
         </div>
       </div>
     </section>
 
-    <section class="timeline-page">
+    <section class="timeline-page section" id="timeline">
       <div class="timeline-deco">
-        <img src="assets/timeline-left.png">
-        <img src="assets/timeline-right.png">
+        <img src="assets/decoration/timeline-left.png">
+        <img src="assets/decoration/timeline-right.png">
       </div>
       <div class="planning">
         <h1>Wedding Planning Timeline</h1>
@@ -270,10 +272,10 @@
       </div>
     </section>
 
-    <section class="gallery-page">
+    <section class="gallery-page section" id="gallery">
       <div class="decoration">
-        <img src="assets/left-corner.png">
-        <img src="assets/right-corner.png">
+        <img src="assets/decoration/left-corner.png">
+        <img src="assets/decoration/right-corner.png">
       </div>
       <h1>Wedding Gallery</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel!</p>
@@ -361,10 +363,10 @@
       <button>View All</button>
     </section>
 
-    <section class="attendance-page">
+    <section class="attendance-page section" id="book">
       <div class="decoration">
-        <img src="assets/left-corner.png">
-        <img src="assets/right-corner.png">
+        <img src="assets/decoration/left-corner.png">
+        <img src="assets/decoration/right-corner.png">
       </div>
       <h1>Attendance Reservation</h1>
       <fieldset>
@@ -416,17 +418,17 @@
       </fieldset>
     </section>
 
-    <section class="gift-page">
+    <section class="gift-page section" id="gift">
       <h1>Hope Can Recieve Your Little Present</h1>
       <div class="japan-bank">
-        <img src="assets/Flag_of_Japan.jpg" alt="">
+        <img src="assets/gift/Flag_of_Japan.jpg" alt="">
         <p>銀行名: ゆうちょ銀行</p>
         <p>支店番号: 10340</p>
         <p>名義: グエン ティ ゴック スン</p>
         <p>口座番号: 21673461</p>
       </div>
       <div class="vietnam-bank">
-        <img src="assets/Flag_of_Vietnam.jpg" alt="">
+        <img src="assets/gift/Flag_of_Vietnam.jpg" alt="">
         <p>Ngân hàng: Sacombank</p>
         <p>Chi nhánh: Kiên Giang</p>
         <p>Tên người thụ hưởng: NGUYEN THI NGOC XUAN</p>
@@ -453,7 +455,7 @@
       <p>Book Attendance</p>
     </section>
     <section class="middle-content">
-      <img src="assets/Logo.png" alt="">
+      <img src="assets/logo_icon/Logo.png" alt="">
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos provident sequi odit ipsa obcaecati est,
         consequatur soluta error atque nisi repellendus harum id quam quisquam quaerat voluptates magni corrupti nobis
         nesciunt voluptatem officiis delectus hic. Reiciendis molestias tenetur atque iure?</p>

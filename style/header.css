@@ -40,6 +40,10 @@ nav .logo img{
   justify-self: center;
 }
 
+.logo{
+  cursor: pointer;
+}
+
 ul {
   display: flex;
   gap: 50px;

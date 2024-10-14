@@ -112,21 +112,16 @@ submit.addEventListener("click", () => {
               findSelection() == "accepts"
                 ? "Accepts With Pleasure!"
                 : "Declines With Regret",
-            Body: `<h1>Name: <span style='color: red'>${
-              firstName.value + " " + lastName.value
-            }</span></h1>
-                <i style = "font-size: 18px">Email: <span>${
-                  email.value
-                }</span></i>
-                <p style = "font-size: 18px">Phone: <span>${
-                  phone.value
-                }</span></p>
-                <p style = "font-size: 18px">Guest: <span>${
-                  guest.value
-                }</span></p>
-                <p style = "font-size: 18px">Message: <span>${
-                  message.value
-                }</span></p>`,
+            Body: `<h1>Name: <span style='color: red'>
+            ${firstName.value + " " + lastName.value}</span></h1>
+                <i style = "font-size: 18px">Email:
+                 <span>${email.value}</span></i>
+                <p style = "font-size: 18px">Phone:
+                 <span>${phone.value}</span></p>
+                <p style = "font-size: 18px">Guest: 
+                <span>${guest.value}</span></p>
+                <p style = "font-size: 18px">Message: 
+                <span>${message.value}</span></p>`,
           });
           document.querySelector(".notification-modal").classList.add("active");
           document.querySelector(".notification-modal legend").textContent =
@@ -134,6 +129,9 @@ submit.addEventListener("click", () => {
           document.querySelector(".notification-modal p").textContent =
             "Thật tiếc khi không thể gặp bạn ở buổi tiệc của chúng mình!!!";
           document.querySelector("form").reset();
+          setTimeout(() => {
+            window.scrollTo(0, 7295);
+          }, 5000);
         })
         .catch((error) => {
           alert("Đã xảy ra lỗi!!!");
