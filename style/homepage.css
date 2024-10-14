@@ -138,4 +138,8 @@
     text-align: center;
     gap: 10px;
   }
+
+  .home-page{
+    height: calc(100vh - 80px);
+  }
 }

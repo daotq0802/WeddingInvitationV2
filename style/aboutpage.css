@@ -332,6 +332,10 @@
     width: 80%;
   }
 
+  .greeting h1{
+    margin-top: 20px;
+  }
+
   .bride-infor img, .broom-infor img{
     width: 100px;
     height: 100px;
@@ -360,8 +364,21 @@
   }
   .groom-content-info div:nth-child(2) p, .bride-content-info div:nth-child(2) p{
     text-align: justify;
+    font-size: .8rem;
   }
   .social i{
     margin: 0;
   }
+
+  .information p{
+    font-size: 1rem;
+  }
+  .groom-content-info, .bride-content-info{
+    gap: 10px  ;
+  }
+
+  .groom-content-info div:nth-child(2), .bride-content-info div:nth-child(2){
+    width: 100%;
+  }
+  
 }

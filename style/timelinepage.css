@@ -157,3 +157,24 @@
     display: none;
   }
 }
+
+@media (width<=550px) {
+  .timeline-deco img{
+    height: 250px;
+  }
+
+  .planning{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .planning h1{
+    font-size: 2rem;
+  }
+
+  .event{
+  }
+}

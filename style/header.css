@@ -162,12 +162,18 @@ header button:hover {
   }
 }
 
-@media (width<=575px) {
+@media (width<=550px) {
   .logo{
     width: 100%;
     padding: 0 25px;
   }
-  .nav-toggle{
-    transform: scale(1);
+
+  nav .logo img{
+    width: 100px;
+    height: 75px;
+  }
+
+  header{
+    height: 80px;
   }
 }

@@ -51,6 +51,9 @@ main section {
   }
   .decoration img:nth-child(3){
     width: 200px;
-    height: 100px;
+    height: 125px !important;
+  }
+  main{
+    top: 80px;
   }
 }

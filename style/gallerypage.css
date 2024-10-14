@@ -160,3 +160,27 @@
     height: 500px;
   }
 }
+
+@media (width<=450px) {
+  .gallery-page{
+    width: 100%;
+    padding: 25px;
+  }
+
+  .gallery-holder{
+    width: 100%;
+  }
+
+  .gallery .img-holder{
+    height: 350px;
+  }
+
+  .gallery-page h1{
+    font-size: 2rem;
+  }
+
+  .gallery-page p{
+    font-size: 1.2rem;
+  }
+  
+}
