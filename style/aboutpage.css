@@ -234,6 +234,10 @@
   .decoration img:nth-child(3){
     height: 150px;
   }
+
+  .main-decoration img{
+    z-index: -1;
+  }
   .information{
     flex-direction: column;
     gap: 10px;
@@ -242,6 +246,8 @@
   .main-information{
     height: auto;
     padding: 50px 0;
+    
+    position: relative;
     z-index: 100;
   }
 
@@ -251,11 +257,11 @@
   }
 
   .main-image img{
-    width: 70%;
+    width: 90%;
   }
 
   .main-image .content{
-    width: 70%;
+    width: 90%;
     gap: 10px;
   }
   .infor-content{
@@ -268,5 +274,43 @@
   }
   .groom-content-info div:nth-child(2), .bride-content-info div:nth-child(2){
     width: calc(calc(100% - 200px))
+  }
+}
+
+@media (width <= 768px) {
+  .main-image img{
+    width: 70%;
+  }
+
+  .main-image .content{
+    width: 70%;
+    gap: 10px;
+  }
+
+  .infor-content img{
+    width: 125px;
+    height: 125px;
+  }
+
+  .main-image .content p:nth-child(1){
+    font-size: 1.2rem;
+  }
+
+  .main-image .content h1:nth-child(2){
+    font-size: 2rem;
+  }
+
+  .main-image .content p:nth-child(3){
+    font-size: 1.2rem;
+  }
+
+
+  .groom-content-info div:nth-child(2), .bride-content-info div:nth-child(2){
+    gap: 5px;
+  }
+
+  .groom-content-info div:nth-child(2), .bride-content-info div:nth-child(2){
+    height: 175px;
+    justify-content: center;
   }
 }

@@ -249,7 +249,7 @@
 .groom-timer h1 {
   font-family: 'Great Vibes';
   letter-spacing: 5px;
-  font-size:3rem
+  font-size: 3rem
 }
 
 .bride-timer p:nth-child(1),
@@ -300,7 +300,7 @@
   background: rgb(187, 189, 152);
 }
 
-.change-location button:hover{
+.change-location button:hover {
   transform: scale(0.8);
 }
 
@@ -319,4 +319,107 @@
   font-family: 'Oswald';
   font-size: 1.2rem;
   letter-spacing: 4px;
+}
+
+@media (width <=992px) {
+  .story-page .timeline-wrapper {
+    width: 100vw;
+    place-content: center;
+    padding: 25px;
+  }
+
+  .image-story img {
+    width: calc(300px + 5vw);
+    height: 200px;
+  }
+
+  .content-story div {
+    height: 200px;
+    padding: 15px;
+  }
+
+  .content-story div h3 {
+    font-size: 1.5rem;
+  }
+
+  .content-story div p:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .content-story div p:nth-child(3) {
+    font-size: 1rem;
+  }
+
+  .timeline-wrapper div:nth-child(1) h1,
+  .groom-timer h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (width<=768px) {
+  .story-page .timeline-wrapper {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-wrapper>div:nth-child(1){
+    margin-bottom: 50px;
+  }
+
+  .image-grid-1::after,
+  .image-grid-1::before,
+  .image-grid-2::after,
+  .image-grid-3::after,
+  .image-grid-4::after,
+  .image-grid-4::before {
+    display: none;
+  }
+  .content-story div{
+    height: auto;
+  }
+
+  .image-grid-1 {
+    border-right: 2px solid rgb(187, 189, 152);
+    padding:15px;
+  }
+
+  .story-grid-1,
+  .story-grid-2,
+  .story-grid-3,
+  .story-grid-4 {
+    height: auto;
+    border: none;
+    border-left: 2px solid rgb(187, 189, 152);
+    border-bottom: 2px solid rgb(187, 189, 152);
+    padding: 15px;
+  }
+
+  .image-grid-2,
+  .image-grid-3,
+  .image-grid-4 {
+    border: none;
+    padding:15px;
+    border-right: 2px solid rgb(187, 189, 152);
+    border-bottom: 2px solid rgb(187, 189, 152);
+  }
+
+  .content-story div h3{
+    font-size: 2rem;
+  }
+
+  .content-story div p:nth-child(2){
+    font-size: 1.5rem;
+  }
+
+  .content-story div p:nth-child(3){
+    font-size: 1.1rem;
+  }
+
+  .timer{
+    height: auto;
+    padding: 25px;
+    margin: 0;
+    margin-top: 25px;
+  }
 }
