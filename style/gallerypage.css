@@ -164,11 +164,12 @@
 @media (width<=450px) {
   .gallery-page{
     width: 100%;
-    padding: 25px;
+    margin-bottom: 25px;
   }
 
   .gallery-holder{
     width: 100%;
+    padding: 25px;
   }
 
   .gallery .img-holder{
@@ -176,11 +177,23 @@
   }
 
   .gallery-page h1{
+    margin: 0;
     font-size: 2rem;
+    padding-top: 50px;
+    letter-spacing: normal;
   }
 
   .gallery-page p{
+    margin: 25px 0 0 0;
+    padding: 0 25px;
     font-size: 1.2rem;
   }
   
+  .gallery img{
+    height: 350px;
+  }
+
+  .gallery-page button{
+    margin-top: 0;
+  }
 }

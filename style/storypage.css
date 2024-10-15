@@ -468,13 +468,25 @@
 
   .timeline-wrapper div:nth-child(1) h1, .groom-timer h1{
     font-size: 1.5rem;
+    letter-spacing: 2px;
   }
 
   .bride-timer p:nth-child(3), .groom-timer p:nth-child(3){
     font-size: 1rem;
+    letter-spacing: 2px;
   }
 
   .bride-timer p:nth-child(1), .groom-timer p:nth-child(1){
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  .timer button{
+    padding: 5px 10px;
     font-size: 1rem;
+  }
+
+  .timeline-wrapper>div:nth-child(1){
+    margin-bottom: 25px ;
   }
 }

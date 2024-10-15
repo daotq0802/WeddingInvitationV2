@@ -1,7 +1,8 @@
-.attendance-page{
-  margin-top: 100px ;
+.attendance-page {
+  margin-top: 100px;
 }
-.attendance-page h1{
+
+.attendance-page h1 {
   line-height: 100px;
   text-align: center;
   font-family: 'Great Vibes';
@@ -74,7 +75,7 @@ textarea {
   resize: none;
 }
 
-select{
+select {
   padding: 15px;
   font-size: 1.1rem;
   font-family: 'Oswald';
@@ -84,7 +85,7 @@ select{
   appearance: none;
 }
 
-form>div input{
+form>div input {
   padding: 15px;
   font-size: 1.1rem;
   font-family: 'Oswald';
@@ -92,7 +93,9 @@ form>div input{
   border: none;
 }
 
-form>div input:focus, textarea:focus, select:focus{
+form>div input:focus,
+textarea:focus,
+select:focus {
   outline: 4px solid rgba(253, 93, 93, 0.5);
   border: none;
   transition: none;
@@ -109,21 +112,21 @@ form fieldset {
   grid-area: attendance;
 }
 
-form fieldset div{
+form fieldset div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-form fieldset label{
- font-family: 'Oswald';
- letter-spacing: 2px;
- font-size: 1.1rem;
- margin-left: 10px;
- cursor: pointer;
+form fieldset label {
+  font-family: 'Oswald';
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-#submitBtn{
+#submitBtn {
   grid-area: button;
   align-self: center;
   justify-self: center;
@@ -140,11 +143,11 @@ form fieldset label{
   z-index: 2;
 }
 
-#submitBtn:hover{
+#submitBtn:hover {
   background: rgb(187, 189, 152);
 }
 
-input[type='radio']{
+input[type='radio'] {
   appearance: none;
   border: 2px solid rgb(253, 93, 93);
   width: 20px;
@@ -169,19 +172,21 @@ input[type="radio"]:checked::before {
 }
 
 @media (width<=1200px) {
-  .attendance-page>fieldset{
+  .attendance-page>fieldset {
     width: 70%;
   }
-  form{
+
+  form {
     min-width: 90%;
   }
 }
 
 @media (width<=992px) {
-  .attendance-page>fieldset{
+  .attendance-page>fieldset {
     width: 70%;
   }
-  form{
+
+  form {
     min-width: 90%;
     display: flex;
     flex-direction: column;
@@ -189,18 +194,75 @@ input[type="radio"]:checked::before {
 }
 
 @media (width<=768px) {
-  .attendance-page>fieldset{
+  .attendance-page>fieldset {
     width: 90%;
     padding: 10px;
   }
-  form{
+
+  form {
     min-width: 90%;
     display: flex;
     flex-direction: column;
   }
 
-  form fieldset{
+  form fieldset {
     flex-direction: column;
     line-height: 50px;
+  }
+}
+
+@media (width<=450px) {
+
+  .attendance-page{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .attendance-page h1 {
+    font-size: 2rem;
+    padding-top: 25px;
+    letter-spacing: normal;
+  }
+
+  .attendance-page>fieldset{
+    padding: 0;
+  }
+
+  legend {
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+
+  form>div label {
+    font-size: 1rem;
+  }
+
+  form>div input,
+  select,
+  textarea {
+    font-size: 1rem;
+    padding: 7.5px;
+  }
+
+  textarea{
+    height: 100px;
+  }
+
+  form fieldset label{
+    font-size: 1rem;
+  }
+
+  input[type='radio']{
+    width:15px;
+    height: 15px;
+  }
+
+  input[type="radio"]::before{
+    width: 7px;
+    height: 7px;
+  }
+
+  #submitBtn{
+    font-size: 1rem;
   }
 }

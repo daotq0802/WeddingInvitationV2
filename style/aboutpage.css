@@ -350,6 +350,7 @@
   }
   .main-image .content h1:nth-child(2){
     font-size: 1.5rem;
+    letter-spacing: 2px;
   }
   .main-image .content p:nth-child(3){
     font-size: 1rem;
@@ -380,5 +381,12 @@
   .groom-content-info div:nth-child(2), .bride-content-info div:nth-child(2){
     width: 100%;
   }
-  
+  .groom-content-info div:nth-child(2) h3, .bride-content-info div:nth-child(2) h3{
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+
+  .infor-click button{
+    font-size: 1rem;
+  }
 }
