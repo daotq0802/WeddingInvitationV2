@@ -26,15 +26,6 @@
 
 .gallery img {
   width: 100%;
-  height: 350px;
-}
-
-.gallery .img-holder {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  border-bottom: 3px double rgb(187, 189, 152);
-  overflow: hidden;
 }
 
 .gallery {
@@ -60,31 +51,6 @@
   100% {
     opacity: 1;
   }
-}
-
-.gallery-info {
-  position: relative;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 2;
-  overflow: hidden;
-  background: #fff;
-}
-
-.gallery-info p:nth-child(1) {
-  font-family: 'Great Vibes';
-  font-size: 1.7rem;
-  letter-spacing: 2px;
-  margin: 0;
-}
-
-.gallery-info p:nth-child(2) {
-  font-family: 'Oswald';
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  margin: 0;
 }
 
 .gallery-page button {
@@ -189,10 +155,6 @@
     font-size: 1.2rem;
   }
   
-  .gallery img{
-    height: 350px;
-  }
-
   .gallery-page button{
     margin-top: 0;
   }
