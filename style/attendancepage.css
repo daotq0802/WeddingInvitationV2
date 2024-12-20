@@ -229,7 +229,7 @@ input[type="radio"]:checked::before {
   }
 
   legend {
-    font-size: 1rem;
+    font-size: 0.85rem;
     letter-spacing: normal;
   }
 
