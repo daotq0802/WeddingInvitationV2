@@ -139,8 +139,12 @@
     padding: 25px;
   }
 
+  .gallery img{
+    height: 600px;
+  }
+
   .gallery .img-holder{
-    height: 350px;
+    height: 600px;
   }
 
   .gallery-page h1{
