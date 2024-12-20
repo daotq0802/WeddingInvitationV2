@@ -1,4 +1,8 @@
 .gift-page {
+  display: none;
+}
+
+.gift-page.active{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 300px;

@@ -130,8 +130,9 @@ submit.addEventListener("click", () => {
             "Thật tiếc khi không thể gặp bạn ở buổi tiệc của chúng mình!!!";
           document.querySelector("form").reset();
           setTimeout(() => {
+            document.querySelector(".gift-page").classList.add("active")
             window.scrollTo(0, 7295);
-          }, 5000);
+          }, 2000);
         })
         .catch((error) => {
           alert("Đã xảy ra lỗi!!!");

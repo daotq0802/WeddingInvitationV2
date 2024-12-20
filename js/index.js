@@ -73,13 +73,17 @@ window.onload = function () {
 const navLink = document.querySelectorAll(".nav_link");
 const sectionLink = document.querySelectorAll(".section");
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => { 
+  anchor.addEventListener('click', function (e) { 
+    e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' }); }); });
+
 let currentSection = "home";
-window.addEventListener("scroll", () => {
-  sectionLink.forEach((section) => {
-    if (window.scrollY >= section.offsetTop) {
-      currentSection = section.id;
-    }
-  });
+// window.addEventListener("scroll", () => {
+//   sectionLink.forEach((section) => {
+//     if (window.scrollY >= section.offsetTop) {
+//       currentSection = section.id;
+//     }
+//   });
 
   navLink.forEach((nav) => {
     if (nav.href.includes(currentSection)) {
@@ -87,7 +91,6 @@ window.addEventListener("scroll", () => {
       nav.classList.add("active");
     }
   });
-});
 
 function goToBook() {
   window.scrollTo(0,6218)
