@@ -1,502 +1,512 @@
 .story-page {
-  width: 100%;
-  position: relative;
+    width: 100%;
+    position: relative;
 }
 
 .story-page .timeline-wrapper {
-  width: 70%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px auto auto auto auto 500px;
-  grid-template-areas:
-    'title title'
-    'img1 content1'
-    'content2 img2'
-    'img3 content3'
-    'content4 img5'
-    'countdown countdown';
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px auto auto auto auto 500px;
+    grid-template-areas:
+        "title title"
+        "img1 content1"
+        "content2 img2"
+        "img3 content3"
+        "content4 img5"
+        "countdown countdown";
 }
 
-.timeline-wrapper>div:nth-child(1) {
-  width: 100%;
-  grid-area: title;
-  font-family: "Great Vibes";
-  text-align: center;
-  align-self: center;
+.timeline-wrapper > div:nth-child(1) {
+    width: 100%;
+    grid-area: title;
+    font-family: "Great Vibes";
+    text-align: center;
+    align-self: center;
 }
 
-.timeline-wrapper>div:nth-child(1) h2 {
-  font-size: 2rem;
-  color: rgb(253, 93, 93);
-  padding-bottom: 15px;
+.timeline-wrapper > div:nth-child(1) h2 {
+    font-size: 2rem;
+    color: rgb(253, 93, 93);
+    padding-bottom: 15px;
 }
 
 .timeline-wrapper div:nth-child(1) h1 {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .image-grid-1 {
-  position: relative;
-  text-align: end;
-  grid-area: img1;
-  padding: 30px;
-  border-top: 2px solid rgb(187, 189, 152);
-  border-right: thin solid rgb(187, 189, 152);
-  border-bottom: 2px solid rgb(187, 189, 152);
+    position: relative;
+    text-align: end;
+    grid-area: img1;
+    padding: 30px;
+    border-top: 2px solid rgb(187, 189, 152);
+    border-right: thin solid rgb(187, 189, 152);
+    border-bottom: 2px solid rgb(187, 189, 152);
 }
 
 .image-grid-1::after,
 .image-grid-2::after,
 .image-grid-3::after,
 .image-grid-4::after {
-  content: '\f004';
-  width: 25px;
-  height: 25px;
-  font-family: "Font Awesome 6 Free";
-  color: rgb(187, 189, 152);
-  font-size: 25px;
-  position: absolute;
-  font-weight: 900;
-  transform: translateY(-50%);
-  top: 50%;
+    content: "\f004";
+    width: 25px;
+    height: 25px;
+    font-family: "Font Awesome 6 Free";
+    color: rgb(187, 189, 152);
+    font-size: 25px;
+    position: absolute;
+    font-weight: 900;
+    transform: translateY(-50%);
+    top: 50%;
 }
 
 .image-grid-1::after {
-  right: -13.5px;
+    right: -13.5px;
 }
 
 .image-grid-1::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: rgb(187, 189, 152);
-  border-radius: 50%;
-  top: -8.5px;
-  right: -7.5px;
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: rgb(187, 189, 152);
+    border-radius: 50%;
+    top: -8.5px;
+    right: -7.5px;
 }
 
 .story-grid-1 {
-  grid-area: content1;
-  padding: 30px;
-  border-top: 2px solid rgb(187, 189, 152);
-  border-left: thin solid rgb(187, 189, 152);
-  border-bottom: 2px solid rgb(187, 189, 152);
+    grid-area: content1;
+    padding: 30px;
+    border-top: 2px solid rgb(187, 189, 152);
+    border-left: thin solid rgb(187, 189, 152);
+    border-bottom: 2px solid rgb(187, 189, 152);
 }
 
 .image-grid-2 {
-  position: relative;
-  grid-area: img2;
-  padding: 30px;
-  border-left: thin solid rgb(187, 189, 152);
-  border-bottom: 2px solid rgb(187, 189, 152);
+    position: relative;
+    grid-area: img2;
+    padding: 30px;
+    border-left: thin solid rgb(187, 189, 152);
+    border-bottom: 2px solid rgb(187, 189, 152);
 }
 
 .image-grid-2::after {
-  left: -13.5px;
+    left: -13.5px;
 }
 
 .story-grid-2 {
-  justify-content: end;
-  text-align: end;
-  grid-area: content2;
-  padding: 30px;
-  border-right: thin solid rgb(187, 189, 152);
-  border-bottom: 2px solid rgb(187, 189, 152);
+    justify-content: end;
+    text-align: end;
+    grid-area: content2;
+    padding: 30px;
+    border-right: thin solid rgb(187, 189, 152);
+    border-bottom: 2px solid rgb(187, 189, 152);
 }
 
 .image-grid-3 {
-  text-align: end;
-  position: relative;
-  grid-area: img3;
-  padding: 30px;
-  border-right: thin solid rgb(187, 189, 152);
-  border-bottom: 2px solid rgb(187, 189, 152);
+    text-align: end;
+    position: relative;
+    grid-area: img3;
+    padding: 30px;
+    border-right: thin solid rgb(187, 189, 152);
+    border-bottom: 2px solid rgb(187, 189, 152);
 }
 
 .image-grid-3::after {
-  right: -13.5px;
+    right: -13.5px;
 }
 
 .story-grid-3 {
-  grid-area: content3;
-  padding: 30px;
-  border-left: thin solid rgb(187, 189, 152);
-  border-bottom: 2px solid rgb(187, 189, 152);
+    grid-area: content3;
+    padding: 30px;
+    border-left: thin solid rgb(187, 189, 152);
+    border-bottom: 2px solid rgb(187, 189, 152);
 }
 
 .image-grid-4 {
-  position: relative;
-  grid-area: img5;
-  padding: 30px;
-  border-left: thin solid rgb(187, 189, 152);
-  border-bottom: 2px solid rgb(187, 189, 152);
+    position: relative;
+    grid-area: img5;
+    padding: 30px;
+    border-left: thin solid rgb(187, 189, 152);
+    border-bottom: 2px solid rgb(187, 189, 152);
 }
 
 .image-grid-4::after {
-  left: -13.5px;
+    left: -13.5px;
 }
 
 .image-grid-4::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: rgb(187, 189, 152);
-  border-radius: 50%;
-  bottom: -7.5px;
-  left: -8.5px;
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: rgb(187, 189, 152);
+    border-radius: 50%;
+    bottom: -7.5px;
+    left: -8.5px;
 }
 
 .story-grid-4 {
-  text-align: end;
-  justify-content: end;
-  grid-area: content4;
-  padding: 30px;
-  border-right: thin solid rgb(187, 189, 152);
-  border-bottom: 2px solid rgb(187, 189, 152);
+    text-align: end;
+    justify-content: end;
+    grid-area: content4;
+    padding: 30px;
+    border-right: thin solid rgb(187, 189, 152);
+    border-bottom: 2px solid rgb(187, 189, 152);
 }
 
 .content-story {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .image-story img {
-  width: 250px;
-  height: 200px;
-  border-radius: 10px;
-  border: 3px double #BBBD98;
-  box-shadow: 0 0 20px rgb(187, 189, 152);
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    border: 3px double #bbbd98;
+    box-shadow: 0 0 20px rgb(187, 189, 152);
 }
 
 .content-story div {
-  padding: 25px;
-  font-family: 'Oswald';
-  background: rgb(187, 189, 152);
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgb(187, 189, 152);
+    padding: 25px;
+    font-family: "Oswald";
+    background: rgb(187, 189, 152);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(187, 189, 152);
 }
 
-.content-story div h3 span{
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: #fff;
-  letter-spacing: 5px;
-  font-weight: 900;
-  text-shadow: 0 0 10px rgb(253, 93, 93);
+.content-story div h3 span {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: 900;
+    text-shadow: 0 0 10px rgb(253, 93, 93);
 }
 
 .content-story div h3 {
-  font-family: 'Great Vibes';
-  letter-spacing: 5px;
-  color: #000;
-  font-size: 2rem;
-  font-weight: 900;
+    font-family: "Great Vibes";
+    letter-spacing: 5px;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 900;
 }
 
 .content-story div p:nth-child(2) {
-  font-size: 1.2rem;
-  font-weight: 900;
-  color: rgb(253, 93, 93);
-  letter-spacing: 5px;
-  font-weight: 900;
-  text-shadow: 0 0 10px #fff;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: rgb(253, 93, 93);
+    letter-spacing: 5px;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff;
 }
 
 .content-story div p:nth-child(3) {
-  font-size: 1.2rem;
-  color: #fff;
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 .timer {
-  background: radial-gradient(silver, rgb(187, 189, 152) 60%);
-  margin: 30px 30px 0 30px;
-  grid-area: countdown;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Oswald';
-  flex-direction: column;
-  background: url('../assets/decoration/countdown-bg.png');
-  background-position: center;
-  background-size: cover;
-  gap: 20px;
+    background: radial-gradient(silver, rgb(187, 189, 152) 60%);
+    margin: 30px 30px 0 30px;
+    grid-area: countdown;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald";
+    flex-direction: column;
+    background: url("../assets/decoration/countdown-bg.png");
+    background-position: center;
+    background-size: cover;
+    gap: 20px;
 }
 
 .timer::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 5px solid rgb(187, 189, 152);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgb(187, 189, 152);
 }
 
 .timer::before {
-  content: '';
-  position: absolute;
-  inset: 5px;
-  margin: auto;
-  border: 5px solid rgb(187, 189, 152);
-  background: #ffffff3d;
+    content: "";
+    position: absolute;
+    inset: 5px;
+    margin: auto;
+    border: 5px solid rgb(187, 189, 152);
+    background: #ffffff3d;
 }
 
 .bride-timer,
 .groom-timer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  gap: 10px;
-  z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
 }
 
 .bride-timer p:nth-child(1),
 .bride-timer h1,
 .groom-timer p:nth-child(1),
 .groom-timer h1 {
-  font-family: 'Great Vibes';
-  letter-spacing: 5px;
-  font-size: 3rem
+    font-family: "Great Vibes";
+    letter-spacing: 5px;
+    font-size: 3rem;
 }
 
 .bride-timer p:nth-child(1),
 .groom-timer p:nth-child(1) {
-  font-size: 1.5rem;
-  font-weight: bold;
-  border-top: 3px double rgb(253, 93, 93);
-  border-bottom: 3px double rgb(253, 93, 93);
-  padding: 5px;
-  text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-top: 3px double rgb(253, 93, 93);
+    border-bottom: 3px double rgb(253, 93, 93);
+    padding: 5px;
+    text-align: center;
 }
 
 .bride-timer p:nth-child(3),
 .groom-timer p:nth-child(3) {
-  font-size: 1.7rem;
-  font-weight: bold;
-  letter-spacing: 5px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
 
 .groom-timer,
 .bride-timer {
-  transform: scale(0);
-  transition: 1s ease;
-  display: none;
+    transform: scale(0);
+    transition: 1s ease;
+    display: none;
 }
 
 .groom-timer.active,
 .bride-timer.active {
-  transform: scale(1);
-  display: flex;
+    transform: scale(1);
+    display: flex;
 }
 
 .timer button {
-  position: relative;
-  z-index: 2;
-  padding: 10px 20px;
-  font-family: 'Oswald';
-  font-size: 1.2rem;
-  font-weight: 500;
-  background: rgb(253, 93, 93);
-  border: thin solid rgb(253, 93, 93);
-  color: #fff;
-  border: none;
-  cursor: pointer;
+    position: relative;
+    z-index: 2;
+    padding: 10px 20px;
+    font-family: "Oswald";
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: rgb(253, 93, 93);
+    border: thin solid rgb(253, 93, 93);
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .timer button:nth-child(3):hover {
-  background: rgb(187, 189, 152);
-}
-
-.change-location button:hover {
-  transform: scale(0.8);
+    background: rgb(187, 189, 152);
 }
 
 #bride-time,
 #groom-time {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 #bride-time.active,
 #groom-time.active {
-  opacity: 1.1;
+    opacity: 1.1;
 }
 
 .flipdown.flipdown__theme-dark .rotor-group-heading:before {
-  color: #000;
-  font-family: 'Oswald';
-  font-size: 1.2rem;
-  letter-spacing: 4px;
+    color: #000;
+    font-family: "Oswald";
+    font-size: 1.2rem;
+    letter-spacing: 4px;
 }
 
 @media (width <=992px) {
-  .story-page .timeline-wrapper {
-    width: 100vw;
-    place-content: center;
-    padding: 25px;
-  }
+    .story-page .timeline-wrapper {
+        width: 100vw;
+        place-content: center;
+        padding: 25px;
+    }
 
-  .image-story img {
-    width: calc(300px + 5vw);
-    height: 200px;
-  }
+    .image-story img {
+        width: calc(300px + 5vw);
+        height: 200px;
+    }
 
-  .content-story div {
-    height: 200px;
-    padding: 15px;
-  }
+    .content-story div {
+        height: 200px;
+        padding: 15px;
+    }
 
-  .content-story div h3 {
-    font-size: 1.5rem;
-  }
+    .content-story div h3 {
+        font-size: 1.5rem;
+    }
 
-  .content-story div p:nth-child(2) {
-    font-size: 1rem;
-  }
+    .content-story div p:nth-child(2) {
+        font-size: 1rem;
+    }
 
-  .content-story div p:nth-child(3) {
-    font-size: 1rem;
-  }
+    .content-story div p:nth-child(3) {
+        font-size: 1rem;
+    }
 
-  .timeline-wrapper div:nth-child(1) h1,
-  .groom-timer h1 {
-    font-size: 2.3rem;
-  }
+    .timeline-wrapper div:nth-child(1) h1,
+    .groom-timer h1 {
+        font-size: 2.3rem;
+    }
 }
 
 @media (width<=768px) {
-  .story-page .timeline-wrapper {
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-  }
+    .story-page .timeline-wrapper {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+    }
 
-  .timeline-wrapper>div:nth-child(1){
-    margin-bottom: 50px;
-  }
+    .story-grid-1,
+    .story-grid-2,
+    .story-grid-3,
+    .story-grid-4 {
+        justify-content: center;
+    }
 
-  .image-grid-1::after,
-  .image-grid-1::before,
-  .image-grid-2::after,
-  .image-grid-3::after,
-  .image-grid-4::after,
-  .image-grid-4::before {
-    display: none;
-  }
-  .content-story div{
-    height: auto;
-  }
+    .image-grid-1{
+        text-align: center;
+    }
 
-  .image-grid-1 {
-    border-right: 2px solid rgb(187, 189, 152);
-    padding:15px;
-  }
+    .timeline-wrapper > div:nth-child(1) {
+        margin-bottom: 50px;
+    }
 
-  .story-grid-1,
-  .story-grid-2,
-  .story-grid-3,
-  .story-grid-4 {
-    height: auto;
-    border: none;
-    border-left: 2px solid rgb(187, 189, 152);
-    border-bottom: 2px solid rgb(187, 189, 152);
-    padding: 15px;
-    text-align:start;
-  }
+    .image-grid-1::after,
+    .image-grid-1::before,
+    .image-grid-2::after,
+    .image-grid-3::after,
+    .image-grid-4::after,
+    .image-grid-4::before {
+        display: none;
+    }
+    .content-story div {
+        height: auto;
+    }
 
-  .image-grid-2,
-  .image-grid-3,
-  .image-grid-4 {
-    border: none;
-    padding:15px;
-    border-right: 2px solid rgb(187, 189, 152);
-    border-bottom: 2px solid rgb(187, 189, 152);
-    text-align:end;
-  }
+    .image-grid-1 {
+        border-right: 2px solid rgb(187, 189, 152);
+        padding: 15px;
+    }
 
-  .content-story div h3{
-    font-size: 2rem;
-  }
+    .story-grid-1,
+    .story-grid-2,
+    .story-grid-3,
+    .story-grid-4 {
+        height: auto;
+        border: none;
+        border-left: 2px solid rgb(187, 189, 152);
+        border-bottom: 2px solid rgb(187, 189, 152);
+        padding: 15px;
+        text-align: start;
+    }
 
-  .content-story div p:nth-child(2){
-    font-size: 1.5rem;
-  }
+    .image-grid-2,
+    .image-grid-3,
+    .image-grid-4 {
+        border: none;
+        padding: 15px;
+        border-right: 2px solid rgb(187, 189, 152);
+        border-bottom: 2px solid rgb(187, 189, 152);
+        text-align: center;
+    }
 
-  .content-story div p:nth-child(3){
-    font-size: 1.1rem;
-  }
+    .content-story div h3 {
+        font-size: 2rem;
+    }
 
-  .timer{
-    height: auto;
-    padding: 25px;
-    margin: 0;
-    margin-top: 25px;
-  }
+    .content-story div p:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .content-story div p:nth-child(3) {
+        font-size: 1.1rem;
+    }
+
+    .timer {
+        height: auto;
+        padding: 25px;
+        margin: 0;
+        margin-top: 25px;
+    }
 }
 
 @media (width<=550px) {
-  .story-page{
-    height: auto;
-  }
+    .story-page {
+        height: auto;
+    }
 
-  .story-page .timeline-wrapper{
-    width: 100%;
-    padding: 25px;
-  }
+    .story-page .timeline-wrapper {
+        width: 100%;
+        padding: 25px;
+    }
 
-  .image-story img{
-    width: 300px;
-  }
+    .image-story img {
+        width: 300px;
+    }
 
-  .content-story div h3{
-    font-size: calc(.7rem + 3vw);
-  }
+    .content-story div h3 {
+        font-size: calc(0.7rem + 3vw);
+    }
 
-  .content-story div p:nth-child(2){
-    font-size: calc(.4rem + 2vw);
-  }
+    .content-story div p:nth-child(2) {
+        font-size: calc(0.4rem + 2vw);
+    }
 
-  .content-story div p:nth-child(3){
-    font-size: calc(.6rem + 1vw);
-  }
+    .content-story div p:nth-child(3) {
+        font-size: calc(0.6rem + 1vw);
+    }
 
-  .flipdown.flipdown__theme-dark .rotor-group-heading:before{
-    font-size: .8rem;
-  }
-  .flipdown .rotor-group{
-    transform: scale(.8);
-    padding: 0;
-  }
+    .flipdown.flipdown__theme-dark .rotor-group-heading:before {
+        font-size: 0.8rem;
+    }
+    .flipdown .rotor-group {
+        transform: scale(0.8);
+        padding: 0;
+    }
 
-  .flipdown{
-    display: flex;
-    justify-content: center;
-    font-weight: normal;
-  }
+    .flipdown {
+        display: flex;
+        justify-content: center;
+        font-weight: normal;
+    }
 
-  .timeline-wrapper div:nth-child(1) h1, .groom-timer h1{
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-  }
+    .timeline-wrapper div:nth-child(1) h1,
+    .groom-timer h1 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
 
-  .bride-timer p:nth-child(3), .groom-timer p:nth-child(3){
-    font-size: 1rem;
-    letter-spacing: 2px;
-  }
+    .bride-timer p:nth-child(3),
+    .groom-timer p:nth-child(3) {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
 
-  .bride-timer p:nth-child(1), .groom-timer p:nth-child(1){
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-  }
+    .bride-timer p:nth-child(1),
+    .groom-timer p:nth-child(1) {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
 
-  .timer button{
-    padding: 5px 10px;
-    font-size: 1rem;
-  }
+    .timer button {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
 
-  .timeline-wrapper>div:nth-child(1){
-    margin-bottom: 25px ;
-  }
+    .timeline-wrapper > div:nth-child(1) {
+        margin-bottom: 25px;
+    }
 }

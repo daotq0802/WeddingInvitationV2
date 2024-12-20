@@ -21,6 +21,12 @@ footer {
   height: 800px;
 }
 
+footer h1{
+  font-size: 3rem;
+  font-family: 'Great Vibes';
+  letter-spacing: 5px;
+}
+
 footer::before {
   position: absolute;
   content: "";
@@ -115,10 +121,6 @@ footer section:nth-child(3) div:hover {
 
 @media (width<=550px) {
   footer{
-    margin: 0;
-    padding: 0;
-    gap: 0;
-    position: static;
-    margin-top: 85px;
+    margin-top: 120px;
   }
 }

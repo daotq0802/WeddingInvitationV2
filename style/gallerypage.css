@@ -39,7 +39,6 @@
 }
 
 .gallery:hover img {
-  transform: scale(1.2);
   filter: contrast(1.2);
   animation: fadeIn 2s ease;
 }
