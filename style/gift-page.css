@@ -65,12 +65,11 @@
 }
 
 @media (width<=992px) {
-  .gift-page {
+  .gift-page.active {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-
 }
 
 @media (width<=550px) {
