@@ -43,7 +43,7 @@ form {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
-    'firstname lastname'
+    'name name'
     'yourmail yourphone'
     'guest guest'
     'message message'

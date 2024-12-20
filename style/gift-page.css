@@ -1,5 +1,6 @@
 .gift-page {
   display: none;
+  scale: 0;
 }
 
 .gift-page.active{
@@ -14,6 +15,7 @@
   margin: auto;
   padding: 50px;
   grid-gap: 25px;
+  scale: 1;
 }
 
 .gift-page h1 {

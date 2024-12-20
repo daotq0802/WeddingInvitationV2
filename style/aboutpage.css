@@ -17,6 +17,10 @@
   font-size: 2rem;
 }
 
+.greeting > p{
+  letter-spacing: 3px;
+}
+
 .greeting h1 {
   margin-top: 40px;
   color: rgb(253, 93, 93);
@@ -61,7 +65,7 @@
 }
 
 .first-infor-content {
-  width: 50%;
+  width: 80%;
 }
 
 .information p {

@@ -98,6 +98,7 @@
 }
 
 .story-grid-2 {
+  justify-content: end;
   text-align: end;
   grid-area: content2;
   padding: 30px;
@@ -150,6 +151,7 @@
 
 .story-grid-4 {
   text-align: end;
+  justify-content: end;
   grid-area: content4;
   padding: 30px;
   border-right: thin solid rgb(187, 189, 152);
@@ -162,20 +164,28 @@
 }
 
 .image-story img {
-  width: 350px;
-  height: 250px;
+  width: 250px;
+  height: 200px;
   border-radius: 10px;
   border: 3px double #BBBD98;
   box-shadow: 0 0 20px rgb(187, 189, 152);
 }
 
 .content-story div {
-  height: 250px;
   padding: 25px;
   font-family: 'Oswald';
   background: rgb(187, 189, 152);
   border-radius: 10px;
   box-shadow: 0 0 20px rgb(187, 189, 152);
+}
+
+.content-story div h3 span{
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 5px;
+  font-weight: 900;
+  text-shadow: 0 0 10px rgb(253, 93, 93);
 }
 
 .content-story div h3 {
