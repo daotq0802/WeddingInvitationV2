@@ -26,8 +26,7 @@ import {
     ref,
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
 const db = getDatabase();
-let firstName = document.getElementById("first-name");
-let lastName = document.getElementById("last-name");
+let name = document.getElementById("name");
 let email = document.getElementById("email");
 let phone = document.getElementById("phone");
 let guest = document.getElementById("guest");
@@ -46,8 +45,7 @@ function findSelection() {
 submit.addEventListener("click", () => {
     if (
         email.value == "" ||
-        firstName.value == "" ||
-        lastName.value == "" ||
+        name.value == "" ||
         phone.value == "" ||
         message.value == ""
     ) {
@@ -60,31 +58,14 @@ submit.addEventListener("click", () => {
     } else {
         if (findSelection() == "accepts") {
             set(ref(db, "accept/" + Date.now()), {
-                FullName: firstName.value + lastName.value,
+                FullName: name.value,
                 Email: email.value,
                 PhoneNo: phone.value,
                 GuestNumber: guest.value,
                 Message: message.value,
             })
                 .then(() => {
-                    Email.send({
-                        SecureToken: "94a28672-6cd2-4b2a-a9fc-ff982d7dee9f ",
-                        To: "daotq8297@gmail.com",
-                        From: "tq.dao0802@gmail.com",
-                        Subject:
-                            findSelection() == "accepts"
-                                ? "Accepts With Pleasure!"
-                                : "Declines With Regret",
-                        Body: `<h1>Name: <span style='color: red'>${
-                            firstName.value + " " + lastName.value
-                        }</span></h1>
-            <i style = "font-size: 18px">Email: <span>${email.value}</span></i>
-            <p style = "font-size: 18px">Phone: <span>${phone.value}</span></p>
-            <p style = "font-size: 18px">Guest: <span>${guest.value}</span></p>
-            <p style = "font-size: 18px">Message: <span>${
-                message.value
-            }</span></p>`,
-                    });
+
                     document
                         .querySelector(".notification-modal")
                         .classList.add("active");
@@ -101,32 +82,15 @@ submit.addEventListener("click", () => {
                 });
         } else {
             set(ref(db, "decline/" + Date.now()), {
-                FullName: firstName.value + lastName.value,
+                FullName: name.value,
                 Email: email.value,
                 PhoneNo: phone.value,
                 GuestNumber: guest.value,
                 Message: message.value,
             })
                 .then(() => {
-                    Email.send({
-                        SecureToken: "94a28672-6cd2-4b2a-a9fc-ff982d7dee9f ",
-                        To: "daotq8297@gmail.com",
-                        From: "tq.dao0802@gmail.com",
-                        Subject:
-                            findSelection() == "accepts"
-                                ? "Accepts With Pleasure!"
-                                : "Declines With Regret",
-                        Body: `<h1>Name: <span style='color: red'>
-            ${firstName.value + " " + lastName.value}</span></h1>
-                <i style = "font-size: 18px">Email:
-                 <span>${email.value}</span></i>
-                <p style = "font-size: 18px">Phone:
-                 <span>${phone.value}</span></p>
-                <p style = "font-size: 18px">Guest: 
-                <span>${guest.value}</span></p>
-                <p style = "font-size: 18px">Message: 
-                <span>${message.value}</span></p>`,
-                    });
+                    
+
                     document
                         .querySelector(".notification-modal")
                         .classList.add("active");
@@ -138,8 +102,8 @@ submit.addEventListener("click", () => {
                     ).textContent =
                         "Thật tiếc khi không thể gặp bạn ở buổi tiệc của chúng mình!!!";
                     document
-                            .querySelector(".gift-page")
-                            .classList.add("active");
+                        .querySelector(".gift-page")
+                        .classList.add("active");
                 })
                 .catch((error) => {
                     alert("Đã xảy ra lỗi!!!");

@@ -15,12 +15,30 @@
   <link rel="stylesheet" href="style/homepage.css">
   <link rel="stylesheet" href="style/aboutpage.css">
   <link rel="stylesheet" href="style/storypage.css">
-  <link rel="stylesheet" href="style/timelinepage.css">
   <link rel="stylesheet" href="style/gallerypage.css">
   <link rel="stylesheet" href="style/attendancepage.css">
   <link rel="stylesheet" href="style/gift-page.css">
   <link rel="stylesheet" href="style/footer.css">
   <link rel="stylesheet" href="style/notification.css">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    function sendMail() {
+      var templateParams = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+      };
+      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(
+          function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Email sent successfully!');
+          },
+          function (error) { 
+            console.log('FAILED...', error); 
+            alert('Failed to send email.'); });
+    }
+  </script>
 </head>
 
 <body>
@@ -155,7 +173,7 @@
         </div>
         <div class="story-grid-1 content-story">
           <div>
-            
+
             <h3>First meet - <span>2018</span></h3>
           </div>
         </div>
@@ -166,7 +184,7 @@
         <div class="story-grid-2 content-story">
           <div>
             <h3>First date - <span>2020</span></h3>
-            
+
           </div>
         </div>
 
@@ -176,7 +194,7 @@
         <div class="story-grid-3 content-story">
           <div>
             <h3>Proposal - <span>2022</span></h3>
-            
+
           </div>
         </div>
 
@@ -186,7 +204,7 @@
         <div class="story-grid-4 content-story">
           <div>
             <h3>Enagagement - <span>2023</span></h3>
-            
+
           </div>
         </div>
         <div class="timer">
