@@ -8,7 +8,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px auto auto auto auto 500px;
+    grid-template-rows: 200px auto auto auto auto 600px;
     grid-template-areas:
         "title title"
         "img1 content1"
@@ -170,6 +170,17 @@
     border: 3px double #bbbd98;
     box-shadow: 0 0 20px rgb(187, 189, 152);
 }
+
+.bride-timer h2:nth-child(3),
+.groom-timer h2:nth-child(3) {
+    font-size: 3rem;
+}
+
+.bride-timer p:nth-child(4),
+.groom-timer p:nth-child(4) {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}   
 
 .content-story div {
     padding: 25px;
@@ -376,7 +387,7 @@
         justify-content: center;
     }
 
-    .image-grid-1{
+    .image-grid-1 {
         text-align: center;
     }
 
@@ -489,8 +500,13 @@
         letter-spacing: 2px;
     }
 
-    .bride-timer p:nth-child(3),
-    .groom-timer p:nth-child(3) {
+    .bride-timer h2:nth-child(3),
+    .groom-timer h2:nth-child(3) {
+        font-size: 2rem;
+    }
+
+    .bride-timer p:nth-child(4),
+    .groom-timer p:nth-child(4) {
         font-size: 1rem;
         letter-spacing: 2px;
     }
