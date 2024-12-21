@@ -231,6 +231,7 @@ input[type="radio"]:checked::before {
   legend {
     font-size: 0.85rem;
     letter-spacing: normal;
+    padding: 10px;
   }
 
   form>div label {
