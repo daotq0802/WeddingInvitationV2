@@ -31,16 +31,16 @@ let email = document.getElementById("email");
 let phone = document.getElementById("phone");
 let guest = document.getElementById("guest");
 let message = document.getElementById("message");
-// let attendance = document.getElementsByName("attendance");
+let attendance = document.getElementsByName("attendance");
 let submit = document.getElementById("submitBtn");
-// function findSelection() {
-//     var sizes = attendance.length;
-//     for (let i = 0; i < sizes; i++) {
-//         if (attendance[i].checked == true) {
-//             return attendance[i].value;
-//         }
-//     }
-// }
+function findSelection() {
+         var sizes = attendance.length;
+     for (let i = 0; i < sizes; i++) {
+         if (attendance[i].checked == true) {
+             return attendance[i].value;
+         }
+     }
+ }
 
 submit.addEventListener("click", () => {
     if (
@@ -56,7 +56,7 @@ submit.addEventListener("click", () => {
         document.querySelector(".notification-modal p").textContent =
             "Phát hiện có mục chưa được cấp thông tin, hãy điền đầy đủ thông tin trước khi gửi!!!";
     } else {
-        // if (findSelection() == "accepts") {
+        if (findSelection() == "accepts") {
             set(ref(db, "accept/" + Date.now()), {
                 FullName: name.value,
                 Email: email.value,
@@ -79,35 +79,35 @@ submit.addEventListener("click", () => {
                 .catch((error) => {
                     alert("Đã xảy ra lỗi!!!");
                 });
-//         } else {
-//             set(ref(db, "decline/" + Date.now()), {
-//                 FullName: name.value,
-//                 Email: email.value,
-//                 PhoneNo: phone.value,
-//                 GuestNumber: guest.value,
-//                 Message: message.value,
-//             })
-//                 .then(() => {
+        } else {
+             set(ref(db, "decline/" + Date.now()), {
+                 FullName: name.value,
+                 Email: email.value,
+                 PhoneNo: phone.value,
+                 GuestNumber: guest.value,
+                 Message: message.value,
+             })
+                .then(() => {
                     
 
-//                     document
-//                         .querySelector(".notification-modal")
-//                         .classList.add("active");
-//                     document.querySelector(
-//                         ".notification-modal legend"
-//                     ).textContent = "See you next time!";
-//                     document.querySelector(
-//                         ".notification-modal p"
-//                     ).textContent =
-//                         "Thật tiếc khi không thể gặp bạn ở buổi tiệc của chúng mình!!!";
-//                     document
-//                         .querySelector(".gift-page")
-//                         .classList.add("active");
-//                 })
-//                 .catch((error) => {
-//                     alert("Đã xảy ra lỗi!!!");
-//                 });
-//         }
+                     document
+                         .querySelector(".notification-modal")
+                        .classList.add("active");
+                     document.querySelector(
+                         ".notification-modal legend"
+                     ).textContent = "See you next time!";
+                     document.querySelector(
+                         ".notification-modal p"
+                     ).textContent =
+                         "Thật tiếc khi không thể gặp bạn ở buổi tiệc của chúng mình!!!";
+                     document
+                         .querySelector(".gift-page")
+                         .classList.add("active");
+                 })
+                 .catch((error) => {
+                     alert("Đã xảy ra lỗi!!!");
+                 });
+         }
     }
 });
 
